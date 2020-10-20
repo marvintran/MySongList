@@ -7,8 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      filterText: '',
-      inStockOnly: false
+      filterText: ''
     };
 
     this.handleFilterTextChange = this.handleFilterTextChange.bind(this);

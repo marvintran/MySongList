@@ -1,12 +1,12 @@
 import React from 'react';
-import Song from './Song'
+import Songs from './Songs'
 
 class MonthList extends React.Component {
   render() {
     return (
       <ul>
         {this.props.songs.map((song) => {
-          return <Song song={song} filterText={this.props.filterText}/>
+          return <Songs song={song} filterText={this.props.filterText}/>
         })}
       </ul>
     )
