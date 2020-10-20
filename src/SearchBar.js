@@ -11,13 +11,16 @@ class SearchBar extends React.Component {
   }
   render() {
     return (
-      <form>
-        <input
-          type="text"
-          value={this.props.filterText}
-          onChange={this.handleFilterTextChange}
-          />
-      </form>
+      <div>
+        Search:
+        <form>
+          <input
+            type="text"
+            value={this.props.filterText}
+            onChange={this.handleFilterTextChange}
+            />
+        </form>
+      </div>
     )
   }
 }
