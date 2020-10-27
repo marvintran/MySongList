@@ -25,26 +25,32 @@ class Track extends React.Component {
       });
     }
   }
-  
+
   render() {
     if(this.props.track.url === "") {
       return <li>{this.props.track.name}</li>
     }
 
+    const genres = [];
+    this.props.track.genre.forEach((genre) => {
+      genres.push(<div>{genre}</div>);
+    });
+
     return (
-      <div onClick={() => this.toggleVideo()}>
-        <li>
+      <div>
+        <li onClick={() => this.toggleVideo()}>
           {this.props.track.name}
           {this.state.button}
-          { this.state.showing
-            ? <ReactPlayer
-                url={this.props.track.url}
-                playing={true}
-                controls={true}
-              />
-            : null
-          }
         </li>
+        <div>{genres}</div>
+        { this.state.showing
+          ? <ReactPlayer
+            url={this.props.track.url}
+            playing={true}
+            controls={true}
+          />
+          : null
+        }
       </div>
     )
   }

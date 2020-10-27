@@ -4,10 +4,9 @@ import Track from "./Track"
 class Songs extends React.Component {
   render() {
     const filterText = this.props.filterText.toLowerCase();
-    const artistName = this.props.song.artist;
+    const artistName = this.props.song.artist.join(", ");
 
     const rows = [];
-
     this.props.song.tracks.forEach((song) => {
       if(artistName.toLowerCase().indexOf(filterText) !== -1 || song.name.toLowerCase().indexOf(filterText) !== -1)
         rows.push(<Track track={song}/>);
