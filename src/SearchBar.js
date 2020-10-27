@@ -26,5 +26,3 @@ class SearchBar extends React.Component {
 }
 
 export default SearchBar;
-
-//https://reactjs.org/docs/thinking-in-react.html
