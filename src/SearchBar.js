@@ -9,6 +9,7 @@ class SearchBar extends React.Component {
   handleFilterTextChange(e) {
     this.props.onFilterTextChange(e.target.value);
   }
+
   render() {
     return (
       <div>
