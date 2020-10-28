@@ -7,23 +7,14 @@ class Track extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showing: false,
-      button: <MdPlayCircleOutline/>
+      videoShowing: false,
     };
   }
 
   toggleVideo() {
-    if(!this.state.showing) {
-      this.setState({
-        showing: true,
-        button: <AiOutlineMinusCircle/>
-      });
-    } else {
-      this.setState({
-        showing: false,
-        button: <MdPlayCircleOutline/>
-      });
-    }
+    this.setState({
+      videoShowing: !this.state.videoShowing
+    });
   }
 
   render() {
@@ -31,19 +22,27 @@ class Track extends React.Component {
       return <li>{this.props.track.name}</li>
     }
 
-    const genres = [];
-    this.props.track.genre.forEach((genre) => {
-      genres.push(<div>{genre}</div>);
+    let videoShowing = this.state.videoShowing;
+    let button;
+
+    if(videoShowing) {
+      button = <AiOutlineMinusCircle/>;
+    } else {
+      button = <MdPlayCircleOutline/>
+    }
+
+    const genres = this.props.track.genre.map((genre) => {
+      return <div>{genre}</div>;
     });
 
     return (
       <div>
         <li onClick={() => this.toggleVideo()}>
           {this.props.track.name}
-          {this.state.button}
+          {button}
         </li>
         <div>{genres}</div>
-        { this.state.showing
+        { videoShowing
           ? <ReactPlayer
             url={this.props.track.url}
             playing={true}
