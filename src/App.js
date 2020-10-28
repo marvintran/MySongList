@@ -1,7 +1,8 @@
 import React from 'react';
 import SearchBar from "./SearchBar";
-import january2020 from './data/january2020.json'
 import MonthList from "./MonthList";
+
+import january2020 from './data/january2020.json';
 
 class App extends React.Component {
   constructor(props) {
