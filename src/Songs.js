@@ -3,8 +3,8 @@ import Track from "./Track"
 
 class Songs extends React.Component {
   render() {
-    const filterText = this.props.filterText.toLowerCase();
     const artistName = this.props.song.artist.join(", ");
+    const filterText = this.props.filterText.toLowerCase();
 
     const rows = [];
     this.props.song.tracks.forEach((song) => {
@@ -14,10 +14,10 @@ class Songs extends React.Component {
 
     if(rows.length > 0) {
       return (
-      <div>
-        <h3>{artistName}</h3>
-        {rows}
-      </div>
+        <div>
+          <h3>{artistName}</h3>
+          {rows}
+        </div>
     )}
 
     return null;
