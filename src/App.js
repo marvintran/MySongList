@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchBar from "./SearchBar";
-import YearList from "./YearList";
 import january2020 from './data/january2020.json'
+import MonthList from "./MonthList";
 
 class App extends React.Component {
   constructor(props) {
@@ -22,9 +22,32 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar filterText={this.state.filterText}
-                   onFilterTextChange={this.handleFilterTextChange}/>
-        <YearList year={'2020'} january2020={january2020} filterText={this.state.filterText}/>
+        <div>
+          <SearchBar filterText={this.state.filterText}
+                     onFilterTextChange={this.handleFilterTextChange}/>
+        </div>
+
+        <div>
+          <h1>2020</h1>
+          <h2>January 2020</h2>
+          <MonthList songs={january2020.songs} filterText={this.state.filterText}/>
+        </div>
+
+        <div>
+          <h1>2019</h1>
+        </div>
+
+        <div>
+          <h1>2018</h1>
+        </div>
+
+        <div>
+          <h1>2017</h1>
+        </div>
+
+        <div>
+          <h1>2016</h1>
+        </div>
       </div>
     )
   }
