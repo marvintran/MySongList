@@ -6,12 +6,13 @@ class Songs extends React.Component {
     const artistName = this.props.song.artist.join(", ");
     const filterText = this.props.filterText.toLowerCase();
 
-    const rows = [];
-    this.props.song.tracks.forEach((song) => {
-      if(artistName.toLowerCase().indexOf(filterText) !== -1 || song.name.toLowerCase().indexOf(filterText) !== -1)
-        rows.push(<Track track={song}/>);
-    });
-
+    const rows = this.props.song.tracks.filter((song) =>
+      song.name.toLowerCase().indexOf(filterText) !== -1 || artistName.toLowerCase().indexOf(filterText) !== -1)
+        .map(song => {
+          return <Track track={song}/>;
+        }
+    );
+    
     if(rows.length > 0) {
       return (
         <div>
