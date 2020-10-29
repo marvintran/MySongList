@@ -6,7 +6,8 @@
         {
           "name": "Tunnel (터널) (Feat. Kim Ho Yeon (김호연))",
           "url": "https://www.youtube.com/watch?v=fUlbfhTBdKA",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist", "Male Vocalist"]
         }
       ]
     },
@@ -16,12 +17,14 @@
         {
           "name": "내게 들려주고 싶은 말 (Dear Me)",
           "url": "https://www.youtube.com/watch?v=bho0m505qVA",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         },
         {
           "name": "너를 그리는 시간 (Drawing Our Moments)",
           "url": "https://www.youtube.com/watch?v=bho0m505qVA",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         }
       ]
     },
@@ -31,22 +34,26 @@
         {
           "name": "Dark Cloud (먹구름)",
           "url": "https://www.youtube.com/watch?v=hrO-BgLjJ-Q",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         },
         {
           "name": "See You (다음에 봐)",
           "url": "https://www.youtube.com/watch?v=HNUnIwx7iqs",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         },
         {
           "name": "26",
           "url": "https://www.youtube.com/watch?v=eUqwF1-jjwQ",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         },
         {
           "name": "One Day Of Twenty (스무살 어느 날)",
           "url": "https://www.youtube.com/watch?v=-Vskj7divWk",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         }
       ]
     },
@@ -56,22 +63,26 @@
         {
           "name": "Say You Love Me Still (너도 힘들다고 얘기해줘)",
           "url": "https://www.youtube.com/watch?v=tFxoR-pd02o",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Male Vocalist"]
         },
         {
           "name": "Farewell (잘 헤어진 거야)",
           "url": "https://www.youtube.com/watch?v=6Bdu60OsmFc",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Male Vocalist"]
         },
         {
           "name": "You're The Reason (너 때문에 웃는다)",
           "url": "https://www.youtube.com/watch?v=BafC-oBdZvk",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Male Vocalist"]
         },
         {
           "name": "Can Do With You (너만 있으면)",
           "url": "https://www.youtube.com/watch?v=SVwYgExV0bg",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Male Vocalist"]
         }
       ]
     },
@@ -81,17 +92,20 @@
         {
           "name": "Where The Love Goes (사랑은 어디로 간 걸까)",
           "url": "https://www.youtube.com/watch?v=VbuI5dIxR0k",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         },
         {
           "name": "Heartache (나만 아픈 일)",
           "url": "https://www.youtube.com/watch?v=zsOahfjQ9S0",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         },
         {
           "name": "Awaiting (견애 차이)",
           "url": "https://www.youtube.com/watch?v=hPtnJyuseZY",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         }
       ]
     },
@@ -101,22 +115,26 @@
         {
           "name": "The Reasons Why I Love You (나는 어떤 이유로 널 사랑하는 걸까)",
           "url": "https://www.youtube.com/watch?v=JwlXTCFspWc",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         },
         {
           "name": "Crescent Moon (손톱달)",
           "url": "https://www.youtube.com/watch?v=DXpiAlJyYkQ",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         },
         {
           "name": "Fainthearted (솔직할 용기가 없어)",
           "url": "https://www.youtube.com/watch?v=vZzkeW3GtfM",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         },
         {
           "name": "Still (보고 싶어요)",
           "url": "https://www.youtube.com/watch?v=I-BdQNZ6kmc",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         }
       ]
     },
@@ -127,7 +145,7 @@
           "name": "Here I Am Again (다시 난, 여기)",
           "url": "https://www.youtube.com/watch?v=FFmdTU4Cpr8",
           "genre": ["Ballad"],
-          "OST": "Crash Landing on You (사랑의 불시착) OST Part.4"
+          "tags": ["Korean", "Female Vocalist", "OST"]
         }
       ]
     },
@@ -138,7 +156,7 @@
           "name": "Photo of My Mind (내 마음의 사진)",
           "url": "https://www.youtube.com/watch?v=LMQ2M6NlcPI",
           "genre": ["Ballad"],
-          "OST": "Crash Landing on You (사랑의 불시착) OST Part.6"
+          "tags": ["Korean", "Female Vocalist", "OST"]
         }
       ]
     },
@@ -149,7 +167,7 @@
           "name": "Right Time and Right Place",
           "url": "https://www.youtube.com/watch?v=lyl0cN6ZAJg",
           "genre": ["Ballad"],
-          "OST": "Chocolate (초콜릿) OST Part.10"
+          "tags": ["Korean", "Female Vocalist", "OST"]
         }
       ]
     },
@@ -159,7 +177,8 @@
         {
           "name": "Sorry (미안해)",
           "url": "https://www.youtube.com/watch?v=awdGWqZeixo",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         }
       ]
     },
@@ -170,7 +189,7 @@
           "name": "I Miss You (자꾸 더 보고싶은 사람)",
           "url": "https://www.youtube.com/watch?v=rA2ew41kqLY",
           "genre": ["Ballad"],
-          "OST": "Dr. Romantic 2 (낭만닥터 김사부 2) OST Part.6"
+          "tags": ["Korean", "Female Vocalist", "Girl Group","OST"]
         }
       ]
     },
@@ -180,7 +199,8 @@
         {
           "name": "Sometimes (가끔은)",
           "url": "https://www.youtube.com/watch?v=ht5ssrPa0wM",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist"]
         }
       ]
     },
@@ -190,7 +210,8 @@
         {
           "name": "Tender love (여리디여린 사랑을)",
           "url": "https://www.youtube.com/watch?v=5_YJHmV-I8A",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Male Vocalist"]
         }
       ]
     },
@@ -200,7 +221,8 @@
         {
           "name": "Loveship",
           "url": "https://www.youtube.com/watch?v=dM5gMsePq-o",
-          "genre": ["Ballad"]
+          "genre": ["Ballad"],
+          "tags": ["Korean", "Female Vocalist", "Male Vocalist", "Girl Group"]
         }
       ]
     },
@@ -211,7 +233,7 @@
           "name": "That's all (다 그렇지 뭐)",
           "url": "https://www.youtube.com/watch?v=gfR2_V71UZI",
           "genre": ["Ballad"],
-          "OST": "Dr. Romantic 2 (낭만닥터 김사부 2) OST Part.4"
+          "tags": ["Korean", "Female Vocalist", "OST"]
         }
       ]
     }
