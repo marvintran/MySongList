@@ -47,7 +47,7 @@ class Track extends React.Component {
             url={this.props.track.url}
             playing={true}
             controls={true}
-          />
+            />
           : null
         }
       </div>
