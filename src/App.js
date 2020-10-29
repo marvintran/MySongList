@@ -1,6 +1,7 @@
 import React from 'react';
-import SearchBar from "./SearchBar";
-import MonthList from "./MonthList";
+import SearchBar from "./components/SearchBar";
+import MonthList from "./components/MonthList";
+import "./App.css";
 
 import january2020 from './data/2020_01_january.json';
 import february2020 from './data/2020_02_february.json';

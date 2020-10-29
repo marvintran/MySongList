@@ -2,6 +2,7 @@ import React from 'react';
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { MdPlayCircleOutline } from "react-icons/md";
 import ReactPlayer from "react-player";
+import "../stylesheets/Track.css";
 
 class Track extends React.Component {
   constructor(props) {
@@ -30,20 +31,13 @@ class Track extends React.Component {
     } else {
       button = <MdPlayCircleOutline/>
     }
-    const divStyle = {
-      display: 'table-row',
-    };
-
-    const divStyle2 = {
-      display: 'table-cell',
-    };
 
     const genres = this.props.track.genre.map((genre) => {
-      return <div style={divStyle2}>{genre}</div>;
+      return <button class="filterButton">{genre}</button>;
     });
 
     const tags = this.props.track.tags.map((tag) => {
-      return <div style={divStyle2}>{tag}</div>;
+      return <button class="filterButton">{tag}</button>;
     });
 
     return (
@@ -52,12 +46,10 @@ class Track extends React.Component {
           {this.props.track.name}
           {button}
         </li>
-        <div style={divStyle}>
-          <div style={divStyle2}>Genres: </div>
+        <div class="filterOptions">
+          <p class="filterButton">Genres:</p>
           {genres}
-        </div>
-        <div>
-          <div style={divStyle2}>Tags: </div>
+          <p class="filterButton">Tags:</p>
           {tags}
         </div>
         { videoShowing
