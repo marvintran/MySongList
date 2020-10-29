@@ -30,9 +30,20 @@ class Track extends React.Component {
     } else {
       button = <MdPlayCircleOutline/>
     }
+    const divStyle = {
+      display: 'table-row',
+    };
+
+    const divStyle2 = {
+      display: 'table-cell',
+    };
 
     const genres = this.props.track.genre.map((genre) => {
-      return <div>{genre}</div>;
+      return <div style={divStyle2}>{genre}</div>;
+    });
+
+    const tags = this.props.track.tags.map((tag) => {
+      return <div style={divStyle2}>{tag}</div>;
     });
 
     return (
@@ -41,7 +52,14 @@ class Track extends React.Component {
           {this.props.track.name}
           {button}
         </li>
-        <div>{genres}</div>
+        <div style={divStyle}>
+          <div style={divStyle2}>Genres: </div>
+          {genres}
+        </div>
+        <div>
+          <div style={divStyle2}>Tags: </div>
+          {tags}
+        </div>
         { videoShowing
           ? <ReactPlayer
             url={this.props.track.url}
