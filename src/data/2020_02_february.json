@@ -1,0 +1,379 @@
+{
+  "songs": [
+    {
+      "artist": ["Rocket Punch (로켓펀치)"],
+      "tracks": [
+        {
+          "name": "So Solo",
+          "url": "https://www.youtube.com/watch?v=FOxRrVGHADo",
+          "genre": ["Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["ELRIS (엘리스)"],
+      "tracks": [
+        {
+          "name": "해봐 (Like I do)",
+          "url": "https://www.youtube.com/watch?v=3ucGattvbdA",
+          "genre": ["Rock", "Indie"]
+        },
+        {
+          "name": "No Big Deal",
+          "url": "https://www.youtube.com/watch?v=CdgvQPtiFLo",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "JACKPOT",
+          "url": "https://www.youtube.com/watch?v=iPAIlZM1VUU",
+          "genre": ["Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["LOONA (이달의 소녀)"],
+      "tracks": [
+        {
+          "name": "땡땡땡",
+          "url": "https://www.youtube.com/watch?v=mntH6yL-4kY",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "So What",
+          "url": "https://www.youtube.com/watch?v=GEo5bmUKFvI",
+          "genre": ["Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["GFRIEND (여자친구)"],
+      "tracks": [
+        {
+          "name": "교차로 (Crossroads)",
+          "url": "https://www.youtube.com/watch?v=kx5TWKPE5sU",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "지금 만나러 갑니다 (Eclipse)",
+          "url": "https://www.youtube.com/watch?v=QyH4pyRsBiQ",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "Here We Are",
+          "url": "https://www.youtube.com/watch?v=Di8CNLpJiLc",
+          "genre": ["Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["Cherry Bullet (체리블렛)"],
+      "tracks": [
+        {
+          "name": "Hands Up (무릎을 탁 치고)",
+          "url": "https://www.youtube.com/watch?v=0It6vWbGOX0",
+          "genre": ["Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["Weki Meki (위키미키)"],
+      "tracks": [
+        {
+          "name": "DAZZLE DAZZLE",
+          "url": "https://www.youtube.com/watch?v=RTeOt6n90vM",
+          "genre": ["Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["DKSN (동경소녀)"],
+      "tracks": [
+        {
+          "name": "Look At Me (봐봐봐)",
+          "url": "https://www.youtube.com/watch?v=PqnbXOy7WwE",
+          "genre": ["Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["CHABITNA (차빛나)"],
+      "tracks": [
+        {
+          "name": "나는 푸른색이 좋아",
+          "url": "https://www.youtube.com/watch?v=rUnAtZ8upAA",
+          "genre": ["Folk", "Pop"]
+        },
+        {
+          "name": "저기 저 깊은 바다속엔 금붕어가 살고",
+          "url": "https://www.youtube.com/watch?v=kT6aXDNTz_A",
+          "genre": ["Folk", "Rock", "Pop"]
+        },
+        {
+          "name": "이름 없는 별들",
+          "url": "https://www.youtube.com/watch?v=3Siif8vPLCE",
+          "genre": ["Ballad", "Folk"]
+        }
+      ]
+    },
+    {
+      "artist": ["Son Hyeeun (손혜은)"],
+      "tracks": [
+        {
+          "name": "Winter Rain (겨울비)",
+          "url": "https://www.youtube.com/watch?v=L5x2gXSC7kU",
+          "genre": ["Ballad", "Acoustic"]
+        },
+        {
+          "name": "Shadow (그림자)",
+          "url": "https://www.youtube.com/watch?v=XtfkF_jEwmQ",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Park Won (박원)"],
+      "tracks": [
+        {
+          "name": "My turn (내 차례)",
+          "url": "https://www.youtube.com/watch?v=tpzFcing2I8",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["Kim Yeon Ji (김연지)"],
+      "tracks": [
+        {
+          "name": "When The Wind Blows (바람이 불면)",
+          "url": "https://www.youtube.com/watch?v=VpAGvATwxD4",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["LUNA (루나)"],
+      "tracks": [
+        {
+          "name": "It Hurts and Hurts (아프고 아파도) (X-MAS Project Vol.2)",
+          "url": "https://www.youtube.com/watch?v=c9iBK8A-llw",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Seo Ja Yeong (서자영)"],
+      "tracks": [
+        {
+          "name": "Til You Can't Reach (닿을 수 없게)",
+          "url": "https://www.youtube.com/watch?v=7pqzFto7r0E",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Sejeong (세정)"],
+      "tracks": [
+        {
+          "name": "All of My Days (나의 모든 날)",
+          "url": "https://www.youtube.com/watch?v=bFLMKECxUMY",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["by me"],
+      "tracks": [
+        {
+          "name": "Like Nothing (아무 일 없던 것처럼)",
+          "url": "https://www.youtube.com/watch?v=xolmAbFGgjQ",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Live ver.",
+          "url": "https://www.youtube.com/watch?v=0w1lxgKy7Js",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Live ver.1",
+          "url": "https://www.youtube.com/watch?v=LA_LvLs8zhY",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["SE O (세오)"],
+      "tracks": [
+        {
+          "name": "Lean On Me",
+          "url": "https://www.youtube.com/watch?v=-yVjFUIsxrU",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["Kevin Oh (케빈오)"],
+      "tracks": [
+        {
+          "name": "Anytime, Anywhere",
+          "url": "https://www.youtube.com/watch?v=PLhTOhto30c",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Standing Egg (스탠딩 에그)"],
+      "tracks": [
+        {
+          "name": "I'm Dawn (with 새벽)",
+          "url": "https://www.youtube.com/watch?v=CsMMa7CZ4oA",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["615"],
+      "tracks": [
+        {
+          "name": "콩깍지",
+          "url": "https://www.youtube.com/watch?v=CGz7rSUN8HI",
+          "genre": ["Ballad", "Acoustic"]
+        },
+        {
+          "name": "거짓말",
+          "url": "https://www.youtube.com/watch?v=CsMMa7CZ4oA",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "혼자",
+          "url": "https://www.youtube.com/watch?v=CsMMa7CZ4oA",
+          "genre": ["Ballad", "Acoustic"]
+        },
+        {
+          "name": "꿈",
+          "url": "https://www.youtube.com/watch?v=46MiCcWIZxc",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Rothy (로시)"],
+      "tracks": [
+        {
+          "name": "HELLO",
+          "url": "https://www.youtube.com/watch?v=j5_btrd-1x4",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Im Subeen (임수빈)"],
+      "tracks": [
+        {
+          "name": "그때의 우리를 너무 미워하지 말고",
+          "url": "https://www.youtube.com/watch?v=6Kcpp1jdNiI",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["BANHANA (반하나)"],
+      "tracks": [
+        {
+          "name": "Because of You (그 남잔 말야)",
+          "url": "https://www.youtube.com/watch?v=avwbUOtWgWA",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Choi Ye Geun (최예근)"],
+      "tracks": [
+        {
+          "name": "Dear. My Winter (나의 겨울에게)",
+          "url": "https://www.youtube.com/watch?v=fhH32K6Kv8U",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["BAEKHYUN (백현)"],
+      "tracks": [
+        {
+          "name": "On The Road (너에게 가는 이 길 위에서 (너.이.길))",
+          "url": "https://www.youtube.com/watch?v=xZpaBkZqumo",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["CHUNG HA 청하"],
+      "tracks": [
+        {
+          "name": "My Love (나의 그대)",
+          "url": "https://www.youtube.com/watch?v=P2iSg_5k2Y8",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["Sondia "],
+      "tracks": [
+        {
+          "name": "Our Souls at Night (우리의 밤)",
+          "url": "https://www.youtube.com/watch?v=1S34b4IfNSo",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["Yoonmirae (윤미래)"],
+      "tracks": [
+        {
+          "name": "Say",
+          "url": "https://www.youtube.com/watch?v=uO_j23R18cM",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["YUJIHI (유지희)"],
+      "tracks": [
+        {
+          "name": "Adult Delinquents (비행어른)",
+          "url": "https://www.youtube.com/watch?v=fkDyUFs1Bpg",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "파란밤 (Blue Night)",
+          "url": "https://www.youtube.com/watch?v=2KrwKxEraI4",
+          "genre": ["Ballad", "Acoustic"]
+        },
+        {
+          "name": "Fly Away (별빛 같던 우리 낭만들도)",
+          "url": "https://www.youtube.com/watch?v=_hCUeqR5p2s",
+          "genre": ["Ballad", "Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["SILVERBELL (은종)"],
+      "tracks": [
+        {
+          "name": "디어마이프렌즈 (Dear my friends)",
+          "url": "https://www.youtube.com/watch?v=HMO7UZNpW9k",
+          "genre": ["Ballad", "Acoustic"]
+        },
+        {
+          "name": "Good Night (잘자)",
+          "url": "https://www.youtube.com/watch?v=3YE_JVOIZ6c",
+          "genre": ["Ballad", "Acoustic"]
+        },
+        {
+          "name": "In the Metro (지하철)",
+          "url": "https://www.youtube.com/watch?v=Uovs5zm3QEE",
+          "genre": ["Folk", "Pop"]
+        }
+      ]
+    }
+  ]
+}

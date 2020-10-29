@@ -1,0 +1,254 @@
+{
+  "songs": [
+    {
+      "artist": ["Stella Jang (스텔라장)"],
+      "tracks": [
+        {
+          "name": "Reality Blue",
+          "url": "https://www.youtube.com/watch?v=3b6UvRIsXvQ",
+          "genre": ["Ballad", "Indie", "Acoustic"]
+        }
+      ]
+    },
+    {
+      "artist": ["Park So Eun (박소은)"],
+      "tracks": [
+        {
+          "name": "Gogangdong (고강동)",
+          "url": "https://www.youtube.com/watch?v=rBmCdJtd-tM",
+          "genre": ["Rock", "Indie"]
+        },
+        {
+          "name": "Somehow (왠지)",
+          "url": "https://www.youtube.com/watch?v=5vSymRNnQqM",
+          "genre": ["Ballad", "Acoustic", "Indie"]
+        },
+        {
+          "name": "Satellite (위성에게)",
+          "url": "https://www.youtube.com/watch?v=7sMMnONimdw",
+          "genre": ["Ballad", "Indie", "Rock"]
+        }
+      ]
+    },
+    {
+      "artist": ["Sejeong (세정)"],
+      "tracks": [
+        {
+          "name": "Hopes For Tomorrow (오늘은 괜찮아)",
+          "url": "https://www.youtube.com/watch?v=jGHb1Lvoq7o",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "SKYLINE",
+          "url": "https://www.youtube.com/watch?v=5C0EOUyA6lo",
+          "genre": ["Ballad", "Pop"]
+        },
+        {
+          "name": "Swim Away (오리발)",
+          "url": "https://www.youtube.com/watch?v=K-yS9yjP23U",
+          "genre": ["Ballad", "Pop"]
+        },
+        {
+          "name": "In My Dream (꿈속에서 널)",
+          "url": "https://www.youtube.com/watch?v=h0kOHb_BNAk",
+          "genre": ["Ballad", "Acoustic"]
+        }
+      ]
+    },
+    {
+      "artist": ["Kwon Jin Ah (권진아)"],
+      "tracks": [
+        {
+          "name": "Lover (연인)",
+          "url": "https://www.youtube.com/watch?v=uJWxbvuhvBQ",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Lonely Night",
+          "url": "https://www.youtube.com/watch?v=3JJEAHst96w",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["Jukjae (적재)"],
+      "tracks": [
+        {
+          "name": "Wish (바람)",
+          "url": "https://www.youtube.com/watch?v=3SGS745SlOQ",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["Kwon Soonkwan (권순관)"],
+      "tracks": [
+        {
+          "name": "이사",
+          "url": "https://www.youtube.com/watch?v=3J1BMjOIeiQ",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Connected (Feat. Crush)",
+          "url": "https://www.youtube.com/watch?v=4O3SxGFdXmU",
+          "genre": ["R&B", "Soul", "Pop"]
+        },
+        {
+          "name": "To You (너에게)",
+          "url": "https://www.youtube.com/watch?v=mGlX-nKRoAY",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Until We Meet Again (다시 만날 때까지)",
+          "url": "https://www.youtube.com/watch?v=MLzek9zcz1o",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["ITZY"],
+      "tracks": [
+        {
+          "name": "WANNABE",
+          "url": "https://www.youtube.com/watch?v=fE2h3lGlOsk",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "I DON'T WANNA DANCE",
+          "url": "https://www.youtube.com/watch?v=o_fKFQPUeDw",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "THAT'S A NO NO",
+          "url": "https://www.youtube.com/watch?v=rhycnTdFc4A",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "YOU MAKE ME",
+          "url": "https://www.youtube.com/watch?v=CWIGtBHy4eU",
+          "genre": ["Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["Yoo Hyung Kyun (유형균)"],
+      "tracks": [
+        {
+          "name": "STARDUST",
+          "url": "https://www.youtube.com/watch?v=LB_CYvOmXig",
+          "genre": ["Ballad", "Indie"]
+        },
+        {
+          "name": "GRAVITY",
+          "url": "https://www.youtube.com/watch?v=uRChrfnaWjg",
+          "genre": ["Ballad", "Indie", "Acoustic"]
+        }
+      ]
+    },
+    {
+      "artist": ["Park Ji Yoon (박지윤)"],
+      "tracks": [
+        {
+          "name": "Flower (그날의 봄)",
+          "url": "https://www.youtube.com/watch?v=8L0fzaaYQ7U",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Han Dong Geun (한동근)"],
+      "tracks": [
+        {
+          "name": "Candle (초)",
+          "url": "https://www.youtube.com/watch?v=7ZWgzNcq1kc",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Jung Seung Hwan (정승환)"],
+      "tracks": [
+        {
+          "name": "I Am You (나는 너야)",
+          "url": "https://www.youtube.com/watch?v=AU3l1MJ1uUI",
+          "genre": ["Ballad", "OST"]
+        }
+      ]
+    },
+    {
+      "artist": ["Fil (필)"],
+      "tracks": [
+        {
+          "name": "Like Nothing (아무일 없던 것처럼)",
+          "url": "https://www.youtube.com/watch?v=5aKqWhynUhY",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["SUHO (수호)"],
+      "tracks": [
+        {
+          "name": "For You Now (Feat. Younha) (너의 차례 Feat. 윤하)",
+          "url": "https://www.youtube.com/watch?v=3s19JUt1W-0",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Self-Portrait (자화상)",
+          "url": "https://www.youtube.com/watch?v=Bm0WreZrKQs",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Norah Jones"],
+      "tracks": [
+        {
+          "name": "I'm Alive",
+          "url": "https://www.youtube.com/watch?v=Hjv2mxOiej4",
+          "genre": ["R&B", "Soul", "Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Circa Waves"],
+      "tracks": [
+        {
+          "name": "Jacqueline",
+          "url": "https://www.youtube.com/watch?v=hXwozor5qz8",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "Move to San Francisco",
+          "url": "https://www.youtube.com/watch?v=mp8_fh7gUtY",
+          "genre": ["Pop"]
+        }
+      ]
+    },
+    {
+      "artist": ["Fujita Maiko (藤田麻衣子)"],
+      "tracks": [
+        {
+          "name": "chapter",
+          "url": "https://www.youtube.com/watch?v=IV3aoObHUnw",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Sono Koega Kikitakute",
+          "url": "https://www.youtube.com/watch?v=NTJdo7glCME",
+          "genre": ["Ballad"]
+        }
+      ]
+    },
+    {
+      "artist": ["Ikimonogakari (いきものがかり)"],
+      "tracks": [
+        {
+          "name": "Ikiru (生きる)",
+          "url": "https://www.youtube.com/watch?v=BahbNpj340k",
+          "genre": ["Ballad"]
+        }
+      ]
+    }
+  ]
+}
