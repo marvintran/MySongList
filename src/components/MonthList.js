@@ -9,9 +9,9 @@ class MonthList extends React.Component {
     });
 
     return (
-      <ul>
+      <React.Fragment>
         {songs}
-      </ul>
+      </React.Fragment>
     )
   }
 }

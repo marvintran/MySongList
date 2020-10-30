@@ -41,17 +41,17 @@ class Track extends React.Component {
     });
 
     return (
-      <div>
+      <React.Fragment>
         <li onClick={() => this.toggleVideo()}>
           {this.props.track.name}
           {button}
         </li>
-        <div class="filterOptions">
+        <li class="filterOptions">
           <p class="filterButton">Genres:</p>
           {genres}
           <p class="filterButton">Tags:</p>
           {tags}
-        </div>
+        </li>
         { videoShowing
           ? <ReactPlayer
             url={this.props.track.url}
@@ -60,7 +60,7 @@ class Track extends React.Component {
             />
           : null
         }
-      </div>
+      </React.Fragment>
     )
   }
 }

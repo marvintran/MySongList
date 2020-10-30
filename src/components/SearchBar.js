@@ -6,13 +6,14 @@ class SearchBar extends React.Component {
     this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
   }
 
-  handleFilterTextChange(e) {
-    this.props.onFilterTextChange(e.target.value);
+  handleFilterTextChange(event) {
+    this.props.onFilterTextChange(event.target.value);
   }
 
+  // https://reactjs.org/docs/forms.html#handling-multiple-inputs
   render() {
     return (
-      <div>
+      <React.Fragment>
         Search:
         <form>
           <input
@@ -21,7 +22,7 @@ class SearchBar extends React.Component {
             onChange={this.handleFilterTextChange}
             />
         </form>
-      </div>
+      </React.Fragment>
     )
   }
 }
