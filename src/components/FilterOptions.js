@@ -1,8 +1,13 @@
 import React from 'react';
 
 class FilterOptions extends React.Component {
-  filterClick(event, value) {
-    alert(value);
+
+  genreClick(value) {
+    this.props.updateGenres(value);
+  }
+
+  tagClick(value) {
+    this.props.updateTags(value);
   }
 
   render() {
@@ -11,23 +16,23 @@ class FilterOptions extends React.Component {
         Filter Options:
         <div>
           Genres:
-          <button onClick={e => this.filterClick(e, "ballad")}>Ballad</button>
-          <button onClick={e => this.filterClick(e, "indie")}>Indie</button>
-          <button onClick={e => this.filterClick(e, "rock")}>Rock</button>
-          <button onClick={e => this.filterClick(e, "popSong")}>Pop</button>
-          <button onClick={e => this.filterClick(e, "acoustic")}>Acoustic</button>
-          <button onClick={e => this.filterClick(e, "jazz")}>Jazz</button>
+          <button onClick={() => this.genreClick("ballad")}>Ballad</button>
+          <button onClick={() => this.genreClick("indie")}>Indie</button>
+          <button onClick={() => this.genreClick("rock")}>Rock</button>
+          <button onClick={() => this.genreClick("popSong")}>Pop</button>
+          <button onClick={() => this.genreClick("acoustic")}>Acoustic</button>
+          <button onClick={() => this.genreClick("jazz")}>Jazz</button>
         </div>
         <div>
           Tags:
-          <button onClick={e => this.filterClick(e, "korean")}>Korean</button>
-          <button onClick={e => this.filterClick(e, "japanese")}>Japanese</button>
-          <button onClick={e => this.filterClick(e, "english")}>English</button>
-          <button onClick={e => this.filterClick(e, "femaleVocalist")}>Female Vocalist</button>
-          <button onClick={e => this.filterClick(e, "maleVocalist")}>Male Vocalist</button>
-          <button onClick={e => this.filterClick(e, "girlGroup")}>Girl Group</button>
-          <button onClick={e => this.filterClick(e, "boyGroup")}>Boy Group</button>
-          <button onClick={e => this.filterClick(e, "ost")}>OST</button>
+          <button onClick={() => this.tagClick("korean")}>Korean</button>
+          <button onClick={() => this.tagClick("japanese")}>Japanese</button>
+          <button onClick={() => this.tagClick("english")}>English</button>
+          <button onClick={() => this.tagClick("femaleVocalist")}>Female Vocalist</button>
+          <button onClick={() => this.tagClick("maleVocalist")}>Male Vocalist</button>
+          <button onClick={() => this.tagClick("girlGroup")}>Girl Group</button>
+          <button onClick={() => this.tagClick("boyGroup")}>Boy Group</button>
+          <button onClick={() => this.tagClick("ost")}>OST</button>
         </div>
       </div>
     )

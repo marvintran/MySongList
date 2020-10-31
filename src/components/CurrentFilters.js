@@ -1,67 +1,72 @@
 import React from 'react';
 
 class CurrentFilters extends React.Component {
+  genreClick(value) {
+    this.props.removeGenres(value);
+  }
+  tagClick(value) {
+    this.props.removeTags(value);
+  }
+
   render() {
-
-
     return (
       <div>
         Current Filters:
         { this.props.filterGenre.ballad
-          ? <button>Ballad</button>
+          ? <button onClick={() => this.genreClick("ballad")}>Ballad</button>
           : null
         }
         { this.props.filterGenre.indie
-          ? <button>Indie</button>
+          ? <button onClick={() => this.genreClick("indie")}>Indie</button>
           : null
         }
         { this.props.filterGenre.rock
-          ? <button>Rock</button>
+          ? <button onClick={() => this.genreClick("rock")}>Rock</button>
           : null
         }
         { this.props.filterGenre.popSong
-          ? <button>Pop</button>
+          ? <button onClick={() => this.genreClick("popSong")}>Pop</button>
           : null
         }
         { this.props.filterGenre.acoustic
-          ? <button>Acoustic</button>
+          ? <button onClick={() => this.genreClick("acoustic")}>Acoustic</button>
           : null
         }
         { this.props.filterGenre.jazz
-          ? <button>Jazz</button>
+          ? <button onClick={() => this.genreClick("jazz")}>Jazz</button>
           : null
         }
 
         { this.props.filterTag.korean
-          ? <button>Korean</button>
+          ? <button onClick={() => this.tagClick("korean")}>Korean</button>
           : null
         }
         { this.props.filterTag.japanese
-          ? <button>Japanese</button>
+          ? <button onClick={() => this.tagClick("japanese")}>Japanese</button>
           : null
         }
         { this.props.filterTag.english
-          ? <button>English</button>
+          ? <button onClick={() => this.tagClick("english")}>English</button>
           : null
         }
         { this.props.filterTag.femaleVocalist
-          ? <button>Female Vocalist</button>
+          ? <button onClick={() => this.tagClick("femaleVocalist")}>Female Vocalist</button>
           : null
         }
         { this.props.filterTag.maleVocalist
-          ? <button>Male Vocalist</button>
+          ? <button onClick={() => this.tagClick("maleVocalist")}>Male Vocalist</button>
           : null
         }
         { this.props.filterTag.girlGroup
-          ? <button>Girl Group</button>
+          ? <button onClick={() => this.tagClick("girlGroup")}>Girl Group</button>
           : null
         }
         { this.props.filterTag.boyGroup
-          ? <button>Boy Group</button>
+          ? <button onClick={() => this.tagClick("boyGroup")}>Boy Group</button>
           : null
         }
         { this.props.filterTag.ost
-          ? <button>OST</button>
+          ? <button onClick={() => this.tagClick("ost")}>OST</button>
           : null
         }
       </div>

@@ -15,7 +15,7 @@ class App extends React.Component {
     this.state = {
       filterText: '',
       filterGenre: {
-        ballad: true,
+        ballad: false,
         indie: false,
         rock: false,
         popSong: false,
@@ -35,6 +35,50 @@ class App extends React.Component {
     };
 
     this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
+    this.updateGenre = this.updateGenre.bind(this);
+    this.updateTag = this.updateTag.bind(this);
+    this.removeGenre = this.removeGenre.bind(this);
+    this.removeTag = this.removeTag.bind(this);
+  }
+
+  //https://stackoverflow.com/a/53986441
+  //https://stackoverflow.com/a/43639228
+  updateGenre(value) {
+    console.log(typeof(value));
+    this.setState(prevState => ({
+      filterGenre: {
+        ...prevState.filterGenre,
+        [value]: !this.state.filterGenre[value]
+      }
+    }))
+  }
+
+  updateTag(value) {
+    console.log(typeof(value));
+    this.setState(prevState => ({
+      filterTag: {
+        ...prevState.filterTag,
+        [value]: !this.state.filterTag[value]
+      }
+    }))
+  }
+
+  removeGenre(value) {
+    this.setState(prevState => ({
+      filterGenre: {
+        ...prevState.filterGenre,
+        [value]: false
+      }
+    }))
+  }
+
+  removeTag(value) {
+    this.setState(prevState => ({
+      filterTag: {
+        ...prevState.filterTag,
+        [value]: false
+      }
+    }))
   }
 
   handleFilterTextChange(filterText) {
@@ -54,20 +98,38 @@ class App extends React.Component {
           <CurrentFilters
             filterGenre={this.state.filterGenre}
             filterTag={this.state.filterTag}
+            removeGenres={this.removeGenre}
+            removeTags={this.removeTag}
           />
           <FilterOptions
-
+            updateGenres={this.updateGenre}
+            updateTags={this.updateTag}
           />
         </div>
 
         <div>
           <h1>2020</h1>
           <h2>March 2020</h2>
-            <MonthList songs={march2020.songs} filterText={this.state.filterText}/>
+            <MonthList
+              songs={march2020.songs}
+              filterText={this.state.filterText}
+              updateGenres={this.updateGenre}
+              updateTags={this.updateTag}
+            />
           <h2>February 2020</h2>
-            <MonthList songs={february2020.songs} filterText={this.state.filterText}/>
+            <MonthList
+              songs={february2020.songs}
+              filterText={this.state.filterText}
+              updateGenres={this.updateGenre}
+              updateTags={this.updateTag}
+            />
           <h2>January 2020</h2>
-            <MonthList songs={january2020.songs} filterText={this.state.filterText}/>
+            <MonthList
+              songs={january2020.songs}
+              filterText={this.state.filterText}
+              updateGenres={this.updateGenre}
+              updateTags={this.updateTag}
+            />
         </div>
 
         <div>
