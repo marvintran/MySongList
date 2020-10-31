@@ -1,6 +1,8 @@
 import React from 'react';
 import SearchBar from "./components/SearchBar";
 import MonthList from "./components/MonthList";
+import CurrentFilters from "./components/CurrentFilters";
+import FilterOptions from "./components/FilterOptions";
 import "./App.css";
 
 import january2020 from './data/2020_01_january.json';
@@ -11,7 +13,25 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      filterText: ''
+      filterText: '',
+      filterGenre: {
+        ballad: true,
+        indie: false,
+        rock: false,
+        popSong: false,
+        acoustic: false,
+        jazz: false
+        },
+      filterTag: {
+        korean: false,
+        japanese: false,
+        english: false,
+        femaleVocalist: false,
+        maleVocalist: false,
+        girlGroup: false,
+        boyGroup: false,
+        ost: false
+      }
     };
 
     this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
@@ -27,8 +47,17 @@ class App extends React.Component {
     return (
       <div>
         <div>
-          <SearchBar filterText={this.state.filterText}
-                     onFilterTextChange={this.handleFilterTextChange}/>
+          <SearchBar
+            filterText={this.state.filterText}
+            onFilterTextChange={this.handleFilterTextChange}
+          />
+          <CurrentFilters
+            filterGenre={this.state.filterGenre}
+            filterTag={this.state.filterTag}
+          />
+          <FilterOptions
+
+          />
         </div>
 
         <div>
