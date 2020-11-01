@@ -89,17 +89,11 @@ class App extends React.Component {
   selectedFilters() {
     const genres = Object.keys(this.state.filterGenre)
       .filter((genre) => this.state.filterGenre[genre] === true)
-        .map((genre) => {
-            return genre
-        }
-      );
+      .map((genre) => { return genre });
 
     const tags = Object.keys(this.state.filterTag)
       .filter((tag) => this.state.filterTag[tag] === true)
-        .map((tag) => {
-            return tag
-        }
-      );
+      .map((tag) => { return tag });
 
     return [genres, tags];
   }
