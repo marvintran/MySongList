@@ -44,7 +44,6 @@ class App extends React.Component {
   //https://stackoverflow.com/a/53986441
   //https://stackoverflow.com/a/43639228
   updateGenre(value) {
-    console.log(typeof(value));
     this.setState(prevState => ({
       filterGenre: {
         ...prevState.filterGenre,
@@ -54,7 +53,6 @@ class App extends React.Component {
   }
 
   updateTag(value) {
-    console.log(typeof(value));
     this.setState(prevState => ({
       filterTag: {
         ...prevState.filterTag,

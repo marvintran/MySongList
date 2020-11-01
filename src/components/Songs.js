@@ -9,7 +9,12 @@ class Songs extends React.Component {
     const rows = this.props.song.tracks.filter((song) =>
       artistName.toLowerCase().indexOf(filterText) !== -1 || song.name.toLowerCase().indexOf(filterText) !== -1)
         .map(song => {
-          return <Track track={song}/>;
+          return(
+            <Track
+              track={song}
+              updateGenres={this.props.updateGenres}
+              updateTags={this.props.updateTags}
+            />)
         }
     );
     
