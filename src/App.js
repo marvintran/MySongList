@@ -39,6 +39,7 @@ class App extends React.Component {
     this.updateTag = this.updateTag.bind(this);
     this.removeGenre = this.removeGenre.bind(this);
     this.removeTag = this.removeTag.bind(this);
+    this.selectedFilters = this.selectedFilters.bind(this);
   }
 
   //https://stackoverflow.com/a/53986441
@@ -85,6 +86,24 @@ class App extends React.Component {
     });
   }
 
+  selectedFilters() {
+    const genres = Object.keys(this.state.filterGenre)
+      .filter((genre) => this.state.filterGenre[genre] === true)
+        .map((genre) => {
+            return genre
+        }
+      );
+
+    const tags = Object.keys(this.state.filterTag)
+      .filter((tag) => this.state.filterTag[tag] === true)
+        .map((tag) => {
+            return tag
+        }
+      );
+
+    return [genres, tags];
+  }
+
   render() {
     return (
       <div>
@@ -94,8 +113,7 @@ class App extends React.Component {
             onFilterTextChange={this.handleFilterTextChange}
           />
           <CurrentFilters
-            filterGenre={this.state.filterGenre}
-            filterTag={this.state.filterTag}
+            filterOptions={this.selectedFilters()}
             removeGenres={this.removeGenre}
             removeTags={this.removeTag}
           />
