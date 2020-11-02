@@ -1,7 +1,6 @@
 import React from 'react';
 
 class FilterOptions extends React.Component {
-
   genreClick(value) {
     this.props.updateGenres(value);
   }
@@ -19,7 +18,7 @@ class FilterOptions extends React.Component {
           <button onClick={() => this.genreClick("ballad")}>Ballad</button>
           <button onClick={() => this.genreClick("indie")}>Indie</button>
           <button onClick={() => this.genreClick("rock")}>Rock</button>
-          <button onClick={() => this.genreClick("popSong")}>Pop</button>
+          <button onClick={() => this.genreClick("pop")}>Pop</button>
           <button onClick={() => this.genreClick("acoustic")}>Acoustic</button>
           <button onClick={() => this.genreClick("jazz")}>Jazz</button>
         </div>

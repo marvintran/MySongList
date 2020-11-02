@@ -2,6 +2,7 @@ import React from 'react';
 import Track from "./Track"
 
 class Songs extends React.Component {
+
   // https://stackoverflow.com/a/7225450
   camelCaseToNormal(value) {
     if(value === "ost")
@@ -11,7 +12,7 @@ class Songs extends React.Component {
     return finalResult;
   }
 
-  test(track) {
+  hasFilters(track) {
     let filters = this.props.filterOptions;
 
     if(filters[0].length === 0 && filters[1].length === 0)
@@ -19,33 +20,38 @@ class Songs extends React.Component {
 
     let trackGenres = track.genre;
     let trackTags = track.tags;
-    let hasGenre = false;
-    let hasTag = false;
 
+    let hasGenre = true;
+    let hasTag = true;
+    
     if(filters[0].length !== 0) {
-      for(let i = 0; i < filters[0].length; i++) {
-        let filterGenre = this.camelCaseToNormal(filters[0][i]);
-        if(trackGenres.includes(filterGenre)) {
-          hasGenre = true;
+      let aaa = filters[0].map((curr) => {
+        let filterGenre = this.camelCaseToNormal(curr);
+        return trackGenres.includes(filterGenre);
+      });
+
+      for(let i = 0; i < aaa.length; i++) {
+        if(aaa[i] === false) {
+          hasGenre = false;
           break;
         }
       }
-    } else {
-      hasGenre = true;
     }
 
     if(filters[1].length !== 0) {
-      for(let i = 0; i < filters[1].length; i++) {
-        let filterTag = this.camelCaseToNormal(filters[1][i]);
-        if(trackTags.includes(filterTag)) {
-          hasTag = true;
+      let aaa = filters[1].map((curr) => {
+        let filterTag = this.camelCaseToNormal(curr);
+        return trackTags.includes(filterTag);
+      });
+
+      for(let i = 0; i < aaa.length; i++) {
+        if(aaa[i] === false) {
+          hasTag = false;
           break;
         }
       }
-    } else {
-      hasTag = true;
     }
-    
+
     return hasGenre && hasTag;
   }
 
@@ -56,7 +62,7 @@ class Songs extends React.Component {
     const rows = this.props.song.tracks
       .filter((track) =>
         (artistName.toLowerCase().indexOf(filterText) !== -1 || track.name.toLowerCase().indexOf(filterText) !== -1)
-        && this.test(track)
+        && this.hasFilters(track)
       )
       .map((track) => {
         return(

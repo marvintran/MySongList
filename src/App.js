@@ -18,7 +18,7 @@ class App extends React.Component {
         ballad: false,
         indie: false,
         rock: false,
-        popSong: false,
+        pop: false,
         acoustic: false,
         jazz: false
         },
@@ -40,6 +40,12 @@ class App extends React.Component {
     this.removeGenre = this.removeGenre.bind(this);
     this.removeTag = this.removeTag.bind(this);
     this.selectedFilters = this.selectedFilters.bind(this);
+  }
+
+  handleFilterTextChange(filterText) {
+    this.setState({
+      filterText: filterText
+    });
   }
 
   //https://stackoverflow.com/a/53986441
@@ -78,12 +84,6 @@ class App extends React.Component {
         [value]: false
       }
     }))
-  }
-
-  handleFilterTextChange(filterText) {
-    this.setState({
-      filterText: filterText
-    });
   }
 
   selectedFilters() {
