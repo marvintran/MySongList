@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiX } from "react-icons/fi";
 
 class CurrentFilters extends React.Component {
   genreClick(value) {
@@ -20,11 +21,11 @@ class CurrentFilters extends React.Component {
 
   render() {
     const genres = this.props.filterOptions[0].map((genre) => {
-      return <button onClick={() => this.genreClick(genre)}>{this.camelCaseToNormal(genre)}</button>
+      return <button onClick={() => this.genreClick(genre)}>{this.camelCaseToNormal(genre)}<FiX/></button>
     });
 
     const tags = this.props.filterOptions[1].map((tag) => {
-      return <button onClick={() => this.tagClick(tag)}>{this.camelCaseToNormal(tag)}</button>
+      return <button onClick={() => this.tagClick(tag)}>{this.camelCaseToNormal(tag)}<FiX/></button>
     });
 
     return (
