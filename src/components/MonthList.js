@@ -1,6 +1,5 @@
 import React from 'react';
 import Songs from './Songs'
-import ReactPlayer from "react-player";
 
 class MonthList extends React.Component {
   constructor(props) {
