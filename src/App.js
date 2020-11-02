@@ -123,6 +123,7 @@ class App extends React.Component {
             <MonthList
               songs={march2020.songs}
               filterText={this.state.filterText}
+              filterOptions={this.selectedFilters()}
               updateGenres={this.updateGenre}
               updateTags={this.updateTag}
             />
@@ -130,6 +131,7 @@ class App extends React.Component {
             <MonthList
               songs={february2020.songs}
               filterText={this.state.filterText}
+              filterOptions={this.selectedFilters()}
               updateGenres={this.updateGenre}
               updateTags={this.updateTag}
             />
@@ -137,6 +139,7 @@ class App extends React.Component {
             <MonthList
               songs={january2020.songs}
               filterText={this.state.filterText}
+              filterOptions={this.selectedFilters()}
               updateGenres={this.updateGenre}
               updateTags={this.updateTag}
             />

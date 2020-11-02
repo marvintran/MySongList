@@ -8,6 +8,7 @@ class MonthList extends React.Component {
         <Songs
           song={song}
           filterText={this.props.filterText}
+          filterOptions={this.props.filterOptions}
           updateGenres={this.props.updateGenres}
           updateTags={this.props.updateTags}
         />
