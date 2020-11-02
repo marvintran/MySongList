@@ -11,6 +11,8 @@ class CurrentFilters extends React.Component {
 
   // https://stackoverflow.com/a/7225450
   camelCaseToNormal(value) {
+    if(value === "ost")
+      return "OST";
     let result = value.replace( /([A-Z])/g, " $1" );
     let finalResult = result.charAt(0).toUpperCase() + result.slice(1);
     return finalResult;
