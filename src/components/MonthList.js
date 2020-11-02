@@ -1,7 +1,21 @@
 import React from 'react';
 import Songs from './Songs'
+import ReactPlayer from "react-player";
 
 class MonthList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      monthShowing: true,
+    };
+  }
+
+  toggleView() {
+    this.setState({
+      monthShowing: !this.state.monthShowing
+    });
+  }
+
   render() {
     const songs = this.props.songs.map((song) => {
       return (
@@ -16,7 +30,11 @@ class MonthList extends React.Component {
 
     return (
       <React.Fragment>
-        {songs}
+        <h2 onClick={() => this.toggleView()}>{this.props.month}</h2>
+        { this.state.monthShowing
+          ? songs
+          : null
+        }
       </React.Fragment>
     )
   }

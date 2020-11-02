@@ -31,7 +31,11 @@ class App extends React.Component {
         girlGroup: false,
         boyGroup: false,
         ost: false
-      }
+      },
+      toggleYear2020: true,
+      toggleYear2019: true,
+      toggleYear2018: true,
+      toggleYear2017: true
     };
 
     this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
@@ -118,47 +122,106 @@ class App extends React.Component {
         </div>
 
         <div>
-          <h1>2020</h1>
-          <h2>March 2020</h2>
-            <MonthList
-              songs={march2020.songs}
-              filterText={this.state.filterText}
-              filterOptions={this.selectedFilters()}
-              updateGenres={this.updateGenre}
-              updateTags={this.updateTag}
-            />
-          <h2>February 2020</h2>
-            <MonthList
-              songs={february2020.songs}
-              filterText={this.state.filterText}
-              filterOptions={this.selectedFilters()}
-              updateGenres={this.updateGenre}
-              updateTags={this.updateTag}
-            />
-          <h2>January 2020</h2>
-            <MonthList
-              songs={january2020.songs}
-              filterText={this.state.filterText}
-              filterOptions={this.selectedFilters()}
-              updateGenres={this.updateGenre}
-              updateTags={this.updateTag}
-            />
+          <h1 onClick={() =>
+            this.setState({
+              toggleYear2020: !this.state.toggleYear2020
+            })}
+          >
+            2020
+          </h1>
+          { this.state.toggleYear2020
+            ? <React.Fragment>
+                <MonthList
+                  month={"March 2020"}
+                  songs={march2020.songs}
+                  filterText={this.state.filterText}
+                  filterOptions={this.selectedFilters()}
+                  updateGenres={this.updateGenre}
+                  updateTags={this.updateTag}
+                />
+                <MonthList
+                  month={"February 2020"}
+                  songs={february2020.songs}
+                  filterText={this.state.filterText}
+                  filterOptions={this.selectedFilters()}
+                  updateGenres={this.updateGenre}
+                  updateTags={this.updateTag}
+                />
+                <MonthList
+                  month={"January 2020"}
+                  songs={january2020.songs}
+                  filterText={this.state.filterText}
+                  filterOptions={this.selectedFilters()}
+                  updateGenres={this.updateGenre}
+                  updateTags={this.updateTag}
+                />
+              </React.Fragment>
+            : null
+          }
         </div>
 
         <div>
-          <h1>2019</h1>
+          <h1 onClick={() =>
+            this.setState({
+              toggleYear2019: !this.state.toggleYear2019
+            })}
+          >
+            2019
+          </h1>
+          { this.state.toggleYear2019
+            ? <React.Fragment>
+
+              </React.Fragment>
+            : null
+          }
         </div>
 
         <div>
-          <h1>2018</h1>
+          <h1 onClick={() =>
+            this.setState({
+              toggleYear2018: !this.state.toggleYear2018
+            })}
+          >
+            2018
+          </h1>
+          { this.state.toggleYear2018
+            ? <React.Fragment>
+
+              </React.Fragment>
+            : null
+          }
         </div>
 
         <div>
-          <h1>2017</h1>
+          <h1 onClick={() =>
+            this.setState({
+              toggleYear2017: !this.state.toggleYear2017
+            })}
+          >
+            2017
+          </h1>
+          { this.state.toggleYear2017
+            ? <React.Fragment>
+
+              </React.Fragment>
+            : null
+          }
         </div>
 
         <div>
-          <h1>2016</h1>
+          <h1 onClick={() =>
+            this.setState({
+              toggleYear2016: !this.state.toggleYear2016
+            })}
+          >
+            2016
+          </h1>
+          { this.state.toggleYear2016
+            ? <React.Fragment>
+
+              </React.Fragment>
+            : null
+          }
         </div>
       </div>
     )
