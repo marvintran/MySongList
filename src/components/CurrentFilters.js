@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button'
 import { FiX } from "react-icons/fi";
 
 class CurrentFilters extends React.Component {
@@ -21,11 +22,21 @@ class CurrentFilters extends React.Component {
 
   render() {
     const genres = this.props.filterOptions[0].map((genre) => {
-      return <button onClick={() => this.genreClick(genre)}>{this.camelCaseToNormal(genre)}<FiX/></button>
+      return (
+        <React.Fragment>
+          <Button onClick={() => this.genreClick(genre)} variant="outline-primary">
+            {this.camelCaseToNormal(genre)}<FiX/>
+          </Button>{' '}
+        </React.Fragment>);
     });
 
     const tags = this.props.filterOptions[1].map((tag) => {
-      return <button onClick={() => this.tagClick(tag)}>{this.camelCaseToNormal(tag)}<FiX/></button>
+      return (
+        <React.Fragment>
+          <Button onClick={() => this.tagClick(tag)} variant="outline-primary">
+            {this.camelCaseToNormal(tag)}<FiX/>
+          </Button>{' '}
+        </React.Fragment>);
     });
 
     return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from 'react-bootstrap/Form'
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -10,18 +11,19 @@ class SearchBar extends React.Component {
     this.props.onFilterTextChange(event.target.value);
   }
 
-  // https://reactjs.org/docs/forms.html#handling-multiple-inputs
   render() {
     return (
       <React.Fragment>
-        Search:
-        <form>
-          <input
-            type="text"
-            value={this.props.filterText}
-            onChange={this.handleFilterTextChange}
+        <Form>
+          <Form.Group>
+            <Form.Label>Search</Form.Label>
+            <Form.Control type="text"
+                          placeholder="Artist or Title"
+                          value={this.props.filterText}
+                          onChange={this.handleFilterTextChange}
             />
-        </form>
+          </Form.Group>
+        </Form>
       </React.Fragment>
     )
   }

@@ -3,6 +3,7 @@ import { AiOutlineMinusCircle } from "react-icons/ai";
 import { MdPlayCircleOutline } from "react-icons/md";
 import ReactPlayer from "react-player";
 import "../stylesheets/Track.css";
+import Button from 'react-bootstrap/Button'
 
 class Track extends React.Component {
   constructor(props) {
@@ -42,11 +43,23 @@ class Track extends React.Component {
     }
 
     const genres = this.props.track.genre.map((genre) => {
-      return <button class="filterButton" onClick={() => this.genreClick(genre)}>{genre}</button>;
+      return (
+        <React.Fragment>
+          <Button className="filterButton" variant="outline-primary" size="sm" onClick={() => this.genreClick(genre)}>
+            {genre}
+          </Button>{' '}
+        </React.Fragment>
+      );
     });
 
     const tags = this.props.track.tags.map((tag) => {
-      return <button class="filterButton" onClick={() => this.tagClick(tag)}>{tag}</button>;
+      return (
+        <React.Fragment>
+          <Button className="filterButton" variant="outline-primary" size="sm" onClick={() => this.tagClick(tag)}>
+            {tag}
+          </Button>{' '}
+        </React.Fragment>
+      );
     });
 
     return (
@@ -55,10 +68,10 @@ class Track extends React.Component {
           {this.props.track.name}
           {button}
         </li>
-        <li class="filterOptions">
-          <p class="filterButton">Genres:</p>
+        <li className="filterOptions">
+          <p className="filterButton">Genres:</p>
           {genres}
-          <p class="filterButton">Tags:</p>
+          <p className="filterButton">Tags:</p>
           {tags}
         </li>
         { videoShowing

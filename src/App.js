@@ -104,7 +104,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <div>
           <SearchBar
             filterText={this.state.filterText}
@@ -223,7 +223,7 @@ class App extends React.Component {
             : null
           }
         </div>
-      </div>
+      </React.Fragment>
     )
   }
 }
