@@ -42,14 +42,23 @@ class Track extends React.Component {
       button = <MdPlayCircleOutline/>
     }
 
-    const genres = this.props.track.genre.map((genre) => {
-      return (
-        <React.Fragment>
-          <Button className="filterButton" variant="outline-primary" size="sm" onClick={() => this.genreClick(genre)}>
-            {genre}
-          </Button>{' '}
-        </React.Fragment>
-      );
+    const genres = this.props.track.genre.map((genre, index) => {
+      if(index < (this.props.track.genre.length-1))
+        return (
+          <React.Fragment>
+            <Button variant="outline-primary" size="sm" onClick={() => this.genreClick(genre)}>
+              {genre}
+            </Button>{' '}
+          </React.Fragment>
+        );
+      else
+        return (
+          <React.Fragment>
+            <Button variant="outline-primary" size="sm" onClick={() => this.genreClick(genre)}>
+              {genre}
+            </Button>{' '}
+          </React.Fragment>
+        );
     });
 
     const tags = this.props.track.tags.map((tag) => {
@@ -64,16 +73,14 @@ class Track extends React.Component {
 
     return (
       <React.Fragment>
-        <li onClick={() => this.toggleVideo()}>
-          {this.props.track.name}
+        <li>
+          <p onClick={() => this.toggleVideo()}>{this.props.track.name}
           {button}
-        </li>
-        <li className="filterOptions">
-          <p className="filterButton">Genres:</p>
+          </p>
+        <div className="filter-options">
           {genres}
-          <p className="filterButton">Tags:</p>
           {tags}
-        </li>
+        </div>
         { videoShowing
           ? <ReactPlayer
             url={this.props.track.url}
@@ -82,6 +89,7 @@ class Track extends React.Component {
             />
           : null
         }
+        </li>
       </React.Fragment>
     )
   }

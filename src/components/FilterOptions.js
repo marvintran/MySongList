@@ -13,9 +13,8 @@ class FilterOptions extends React.Component {
   render() {
     return (
       <div>
-        Filter Options:
+        <p>Genres:</p>
         <div>
-          Genres:
           <Button onClick={() => this.genreClick("ballad")} variant="outline-primary">Ballad</Button>{' '}
           <Button onClick={() => this.genreClick("indie")} variant="outline-primary">Indie</Button>{' '}
           <Button onClick={() => this.genreClick("rock")} variant="outline-primary">Rock</Button>{' '}
@@ -23,8 +22,8 @@ class FilterOptions extends React.Component {
           <Button onClick={() => this.genreClick("acoustic")} variant="outline-primary">Acoustic</Button>{' '}
           <Button onClick={() => this.genreClick("jazz")} variant="outline-primary">Jazz</Button>
         </div>
+        <p>Tags:</p>
         <div>
-          Tags:
           <Button onClick={() => this.tagClick("korean")} variant="outline-primary">Korean</Button>{' '}
           <Button onClick={() => this.tagClick("japanese")} variant="outline-primary">Japanese</Button>{' '}
           <Button onClick={() => this.tagClick("english")} variant="outline-primary">English</Button>{' '}

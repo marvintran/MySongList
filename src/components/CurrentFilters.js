@@ -41,7 +41,6 @@ class CurrentFilters extends React.Component {
 
     return (
       <div>
-        Current Filters:
         {genres}
         {tags}
       </div>
