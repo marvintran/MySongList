@@ -119,6 +119,8 @@ class App extends React.Component {
           <FilterOptions
             updateGenres={this.updateGenre}
             updateTags={this.updateTag}
+            stateGenre={this.state.filterGenre}
+            stateTag={this.state.filterTag}
           />
         </Container>
 

@@ -69,6 +69,7 @@ class Songs extends React.Component {
         return(
           <Track
             track={track}
+            filterOptions={this.props.filterOptions}
             updateGenres={this.props.updateGenres}
             updateTags={this.props.updateTags}
           />)
