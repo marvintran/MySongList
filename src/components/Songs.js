@@ -1,5 +1,6 @@
 import React from 'react';
 import Track from "./Track"
+import "../stylesheets/Songs.css";
 
 class Songs extends React.Component {
 
