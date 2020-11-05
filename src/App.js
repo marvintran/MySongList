@@ -2,7 +2,7 @@ import React from 'react';
 import SearchBar from "./components/SearchBar";
 import MonthList from "./components/MonthList";
 import CurrentFilters from "./components/CurrentFilters";
-import FilterOptions from "./components/FilterOptions";
+import Filters from "./components/Filters";
 import Container from 'react-bootstrap/Container';
 import Collapse from 'react-bootstrap/Collapse';
 
@@ -56,19 +56,25 @@ class App extends React.Component {
   //https://stackoverflow.com/a/53986441
   //https://stackoverflow.com/a/43639228
   updateGenre(value) {
+    let toCamelCase = value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+
     this.setState(prevState => ({
       filterGenre: {
         ...prevState.filterGenre,
-        [value]: !this.state.filterGenre[value]
+        [toCamelCase]: !this.state.filterGenre[toCamelCase]
       }
     }))
   }
 
   updateTag(value) {
+    let toCamelCase = value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+    if(value === "OST")
+      toCamelCase = "ost";
+
     this.setState(prevState => ({
       filterTag: {
         ...prevState.filterTag,
-        [value]: !this.state.filterTag[value]
+        [toCamelCase]: !this.state.filterTag[toCamelCase]
       }
     }))
   }
@@ -116,7 +122,7 @@ class App extends React.Component {
             removeGenres={this.removeGenre}
             removeTags={this.removeTag}
           />
-          <FilterOptions
+          <Filters
             updateGenres={this.updateGenre}
             updateTags={this.updateTag}
             stateGenre={this.state.filterGenre}
