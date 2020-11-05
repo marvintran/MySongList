@@ -4,6 +4,7 @@ import MonthList from "./components/MonthList";
 import CurrentFilters from "./components/CurrentFilters";
 import FilterOptions from "./components/FilterOptions";
 import Container from 'react-bootstrap/Container';
+import Collapse from 'react-bootstrap/Collapse';
 
 import january2020 from './data/2020_01_january.json';
 import february2020 from './data/2020_02_february.json';
@@ -129,35 +130,34 @@ class App extends React.Component {
           >
             2020
           </h1>
-          { this.state.toggleYear2020
-            ? <React.Fragment>
-                <MonthList
-                  month={"March 2020"}
-                  songs={march2020.songs}
-                  filterText={this.state.filterText}
-                  filterOptions={this.selectedFilters()}
-                  updateGenres={this.updateGenre}
-                  updateTags={this.updateTag}
-                />
-                <MonthList
-                  month={"February 2020"}
-                  songs={february2020.songs}
-                  filterText={this.state.filterText}
-                  filterOptions={this.selectedFilters()}
-                  updateGenres={this.updateGenre}
-                  updateTags={this.updateTag}
-                />
-                <MonthList
-                  month={"January 2020"}
-                  songs={january2020.songs}
-                  filterText={this.state.filterText}
-                  filterOptions={this.selectedFilters()}
-                  updateGenres={this.updateGenre}
-                  updateTags={this.updateTag}
-                />
-              </React.Fragment>
-            : null
-          }
+          <Collapse in={this.state.toggleYear2020}>
+            <div>
+              <MonthList
+                month={"March 2020"}
+                songs={march2020.songs}
+                filterText={this.state.filterText}
+                filterOptions={this.selectedFilters()}
+                updateGenres={this.updateGenre}
+                updateTags={this.updateTag}
+              />
+              <MonthList
+                month={"February 2020"}
+                songs={february2020.songs}
+                filterText={this.state.filterText}
+                filterOptions={this.selectedFilters()}
+                updateGenres={this.updateGenre}
+                updateTags={this.updateTag}
+              />
+              <MonthList
+                month={"January 2020"}
+                songs={january2020.songs}
+                filterText={this.state.filterText}
+                filterOptions={this.selectedFilters()}
+                updateGenres={this.updateGenre}
+                updateTags={this.updateTag}
+              />
+            </div>
+          </Collapse>
         </Container>
 
         <Container>

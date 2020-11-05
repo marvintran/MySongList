@@ -1,5 +1,6 @@
 import React from 'react';
 import Songs from './Songs'
+import Collapse from 'react-bootstrap/Collapse';
 
 class MonthList extends React.Component {
   constructor(props) {
@@ -30,10 +31,11 @@ class MonthList extends React.Component {
     return (
       <React.Fragment>
         <h2 onClick={() => this.toggleView()}>{this.props.month}</h2>
-        { this.state.monthShowing
-          ? songs
-          : null
-        }
+        <Collapse in={this.state.monthShowing}>
+          <div>
+            {songs}
+          </div>
+        </Collapse>
       </React.Fragment>
     )
   }
