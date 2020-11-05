@@ -24,7 +24,7 @@ class CurrentFilters extends React.Component {
     const genres = this.props.filterOptions[0].map((genre) => {
       return (
         <React.Fragment>
-          <Button onClick={() => this.genreClick(genre)} variant="outline-primary">
+          <Button onClick={() => this.genreClick(genre)} variant="outline-primary" active>
             {this.camelCaseToNormal(genre)}<FiX/>
           </Button>{' '}
         </React.Fragment>);
@@ -33,7 +33,7 @@ class CurrentFilters extends React.Component {
     const tags = this.props.filterOptions[1].map((tag) => {
       return (
         <React.Fragment>
-          <Button onClick={() => this.tagClick(tag)} variant="outline-primary">
+          <Button onClick={() => this.tagClick(tag)} variant="outline-primary" active>
             {this.camelCaseToNormal(tag)}<FiX/>
           </Button>{' '}
         </React.Fragment>);

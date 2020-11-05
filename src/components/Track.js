@@ -74,7 +74,7 @@ class Track extends React.Component {
     return (
       <React.Fragment>
         <li>
-          <p onClick={() => this.toggleVideo()}>{this.props.track.name}
+          <p onClick={() => this.toggleVideo()}>{this.props.track.name}{' '}
           {button}
           </p>
         <div className="filter-options">

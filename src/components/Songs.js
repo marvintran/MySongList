@@ -76,7 +76,7 @@ class Songs extends React.Component {
     if(rows.length > 0) {
       return (
         <React.Fragment>
-          <h3>{artistName}</h3>
+          <h5>{artistName}</h5>
           <ul>
             {rows}
           </ul>

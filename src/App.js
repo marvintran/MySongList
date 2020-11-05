@@ -3,7 +3,7 @@ import SearchBar from "./components/SearchBar";
 import MonthList from "./components/MonthList";
 import CurrentFilters from "./components/CurrentFilters";
 import FilterOptions from "./components/FilterOptions";
-import "./App.css";
+import Container from 'react-bootstrap/Container';
 
 import january2020 from './data/2020_01_january.json';
 import february2020 from './data/2020_02_february.json';
@@ -104,8 +104,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-        <div>
+      <Container>
+        <Container>
           <SearchBar
             filterText={this.state.filterText}
             onFilterTextChange={this.handleFilterTextChange}
@@ -119,9 +119,9 @@ class App extends React.Component {
             updateGenres={this.updateGenre}
             updateTags={this.updateTag}
           />
-        </div>
+        </Container>
 
-        <div>
+        <Container>
           <h1 onClick={() =>
             this.setState({
               toggleYear2020: !this.state.toggleYear2020
@@ -158,9 +158,9 @@ class App extends React.Component {
               </React.Fragment>
             : null
           }
-        </div>
+        </Container>
 
-        <div>
+        <Container>
           <h1 onClick={() =>
             this.setState({
               toggleYear2019: !this.state.toggleYear2019
@@ -174,9 +174,9 @@ class App extends React.Component {
               </React.Fragment>
             : null
           }
-        </div>
+        </Container>
 
-        <div>
+        <Container>
           <h1 onClick={() =>
             this.setState({
               toggleYear2018: !this.state.toggleYear2018
@@ -190,9 +190,9 @@ class App extends React.Component {
               </React.Fragment>
             : null
           }
-        </div>
+        </Container>
 
-        <div>
+        <Container>
           <h1 onClick={() =>
             this.setState({
               toggleYear2017: !this.state.toggleYear2017
@@ -206,9 +206,9 @@ class App extends React.Component {
               </React.Fragment>
             : null
           }
-        </div>
+        </Container>
 
-        <div>
+        <Container>
           <h1 onClick={() =>
             this.setState({
               toggleYear2016: !this.state.toggleYear2016
@@ -222,8 +222,8 @@ class App extends React.Component {
               </React.Fragment>
             : null
           }
-        </div>
-      </React.Fragment>
+        </Container>
+      </Container>
     )
   }
 }
