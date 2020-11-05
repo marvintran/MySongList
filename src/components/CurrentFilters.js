@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button'
-import { FiX } from "react-icons/fi";
+import Button from 'react-bootstrap/Button';
+import { BiX } from "react-icons/bi";
 
 class CurrentFilters extends React.Component {
   genreClick(value) {
@@ -25,7 +25,7 @@ class CurrentFilters extends React.Component {
       return (
         <React.Fragment>
           <Button onClick={() => this.genreClick(genre)} variant="outline-primary" active>
-            {this.camelCaseToNormal(genre)}<FiX/>
+            {this.camelCaseToNormal(genre)}<BiX/>
           </Button>{' '}
         </React.Fragment>);
     });
@@ -34,7 +34,7 @@ class CurrentFilters extends React.Component {
       return (
         <React.Fragment>
           <Button onClick={() => this.tagClick(tag)} variant="outline-primary" active>
-            {this.camelCaseToNormal(tag)}<FiX/>
+            {this.camelCaseToNormal(tag)}<BiX/>
           </Button>{' '}
         </React.Fragment>);
     });
