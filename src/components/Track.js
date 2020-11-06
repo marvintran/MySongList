@@ -4,6 +4,7 @@ import { MdPlayCircleOutline } from "react-icons/md";
 import ReactPlayer from "react-player";
 import "../stylesheets/Track.css";
 import Button from 'react-bootstrap/Button'
+import FilterButton from "./FilterButton";
 
 class Track extends React.Component {
   constructor(props) {
@@ -70,29 +71,25 @@ class Track extends React.Component {
       if(index < (this.props.track.genre.length-1))
         return (
           <React.Fragment>
-            <Button
-              variant="outline-primary"
-              size="sm"
-              onClick={() => this.genreClick(genre)}
+            <FilterButton
+              title={genre}
+              action={this.props.updateGenres}
               active={this.isActive(0, genre)}
-            >
-              {genre}
-            </Button>{' '}
+              size="sm"
+            />{' '}
           </React.Fragment>
         );
 
       else
         return (
           <React.Fragment>
-            <Button
-              className="last-button"
-              variant="outline-primary"
-              size="sm"
-              onClick={() => this.genreClick(genre)}
+            <FilterButton
+              title={genre}
+              action={this.props.updateGenres}
               active={this.isActive(0, genre)}
-            >
-              {genre}
-            </Button>{' '}
+              size="sm"
+              className="last-button"
+            />{' '}
           </React.Fragment>
         );
     });
@@ -100,15 +97,12 @@ class Track extends React.Component {
     const tags = this.props.track.tags.map((tag) => {
       return (
         <React.Fragment>
-          <Button
-            className="filterButton"
-            variant="outline-primary"
-            size="sm"
-            onClick={() => this.tagClick(tag)}
+          <FilterButton
+            title={tag}
+            action={this.props.updateTags}
             active={this.isActive(1, tag)}
-          >
-            {tag}
-          </Button>{' '}
+            size="sm"
+          />{' '}
         </React.Fragment>
       );
     });
