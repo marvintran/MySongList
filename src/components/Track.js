@@ -2,9 +2,8 @@ import React from 'react';
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { MdPlayCircleOutline } from "react-icons/md";
 import ReactPlayer from "react-player";
-import "../stylesheets/Track.css";
-import Button from 'react-bootstrap/Button'
 import FilterButton from "./FilterButton";
+import "../stylesheets/Track.css";
 
 class Track extends React.Component {
   constructor(props) {
@@ -18,15 +17,6 @@ class Track extends React.Component {
     this.setState({
       videoShowing: !this.state.videoShowing
     });
-  }
-
-  // string to camelCase: https://stackoverflow.com/a/52551910
-  genreClick(value) {
-    this.props.updateGenres(value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase()));
-  }
-
-  tagClick(value) {
-    this.props.updateTags(value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase()));
   }
 
   // https://stackoverflow.com/a/7225450
