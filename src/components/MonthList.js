@@ -1,44 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Songs from './Songs'
 import Collapse from 'react-bootstrap/Collapse';
 
-class MonthList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      monthShowing: true,
-    };
-  }
+const MonthList = ({ month, songs, filterText, filterOptions, updateGenres, updateTags }) => {
+  const [monthShowing, setMonthShowing] = useState(true);
 
-  toggleView() {
-    this.setState({
-      monthShowing: !this.state.monthShowing
-    });
-  }
-
-  render() {
-    const songs = this.props.songs.map((song) => {
-      return (
-        <Songs
-          song={song}
-          filterText={this.props.filterText}
-          filterOptions={this.props.filterOptions}
-          updateGenres={this.props.updateGenres}
-          updateTags={this.props.updateTags}
-        />
-      )});
-
+  const songList = songs.map((song) => {
     return (
-      <React.Fragment>
-        <h2 onClick={() => this.toggleView()}>{this.props.month}</h2>
-        <Collapse in={this.state.monthShowing}>
-          <div>
-            {songs}
-          </div>
-        </Collapse>
-      </React.Fragment>
-    )
-  }
+      <Songs
+        song={song}
+        filterText={filterText}
+        filterOptions={filterOptions}
+        updateGenres={updateGenres}
+        updateTags={updateTags}
+      />
+    )});
+
+  return (
+    <React.Fragment>
+      <h2 onClick={() => setMonthShowing(!monthShowing)}>{month}</h2>
+      <Collapse in={monthShowing}>
+        <div>
+          {songList}
+        </div>
+      </Collapse>
+    </React.Fragment>
+  )
 }
 
 export default MonthList;

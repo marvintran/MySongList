@@ -1,124 +1,109 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { MdPlayCircleOutline } from "react-icons/md";
 import ReactPlayer from "react-player";
 import FilterButton from "./FilterButton";
 import "../stylesheets/Track.css";
 
-class Track extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      videoShowing: false,
-    };
-  }
+// https://stackoverflow.com/a/7225450
+function camelCaseToNormal(value) {
+  if(value === "ost")
+    return "OST";
+  let result = value.replace( /([A-Z])/g, " $1" );
+  let finalResult = result.charAt(0).toUpperCase() + result.slice(1);
+  return finalResult;
+}
 
-  toggleVideo() {
-    this.setState({
-      videoShowing: !this.state.videoShowing
-    });
-  }
-
-  // https://stackoverflow.com/a/7225450
-  camelCaseToNormal(value) {
-    if(value === "ost")
-      return "OST";
-    let result = value.replace( /([A-Z])/g, " $1" );
-    let finalResult = result.charAt(0).toUpperCase() + result.slice(1);
-    return finalResult;
-  }
-
-  isActive(index, value) {
-    let filters = this.props.filterOptions;
-    let isActive = false;
-    if(filters[index].length !== 0) {
-      for(let i = 0; i < filters[index].length; i++) {
-        let filterValue = this.camelCaseToNormal(filters[index][i]);
-        if(filterValue === value) {
-          isActive = true;
-          break;
-        }
+function isActive(index, value, filters) {
+  let isActive = false;
+  if(filters[index].length !== 0) {
+    for(let i = 0; i < filters[index].length; i++) {
+      let filterValue = camelCaseToNormal(filters[index][i]);
+      if(filterValue === value) {
+        isActive = true;
+        break;
       }
     }
-    return isActive;
+  }
+  return isActive;
+}
+
+const Track = ({ track, filterOptions, updateGenres, updateTags }) => {
+  const [videoShowing, setVideoShowing] = useState(false);
+
+  if(track.url === "") {
+    return <li>{track.name}</li>
   }
 
-  render() {
-    if(this.props.track.url === "") {
-      return <li>{this.props.track.name}</li>
-    }
+  let button;
 
-    let videoShowing = this.state.videoShowing;
-    let button;
+  if(videoShowing) {
+    button = <AiOutlineMinusCircle/>;
+  } else {
+    button = <MdPlayCircleOutline/>
+  }
 
-    if(videoShowing) {
-      button = <AiOutlineMinusCircle/>;
-    } else {
-      button = <MdPlayCircleOutline/>
-    }
-
-    const genres = this.props.track.genre.map((genre, index) => {
-      if(index < (this.props.track.genre.length-1))
-        return (
-          <React.Fragment>
-            <FilterButton
-              title={genre}
-              action={this.props.updateGenres}
-              active={this.isActive(0, genre)}
-              size="sm"
-            />{' '}
-          </React.Fragment>
-        );
-
-      else
-        return (
-          <React.Fragment>
-            <FilterButton
-              title={genre}
-              action={this.props.updateGenres}
-              active={this.isActive(0, genre)}
-              size="sm"
-              className="last-button"
-            />{' '}
-          </React.Fragment>
-        );
-    });
-
-    const tags = this.props.track.tags.map((tag) => {
+  const genres = track.genre.map((genre, index) => {
+    if(index < (track.genre.length-1))
       return (
         <React.Fragment>
           <FilterButton
-            title={tag}
-            action={this.props.updateTags}
-            active={this.isActive(1, tag)}
+            title={genre}
+            action={updateGenres}
+            active={isActive(0, genre, filterOptions)}
             size="sm"
           />{' '}
         </React.Fragment>
       );
-    });
 
+    else
+      return (
+        <React.Fragment>
+          <FilterButton
+            title={genre}
+            action={updateGenres}
+            active={isActive(0, genre, filterOptions)}
+            size="sm"
+            className="last-button"
+          />{' '}
+        </React.Fragment>
+      );
+  });
+
+  const tags = track.tags.map((tag) => {
     return (
       <React.Fragment>
-        <li>
-          <p onClick={() => this.toggleVideo()}>{this.props.track.name}{' '}
-          {button}
-          </p>
-          <div className="filter-options">
-            {genres}
-            {tags}
-          </div>
-          { videoShowing
-            ? <ReactPlayer
-              url={this.props.track.url}
-              playing={true}
-              controls={true}
-              />
-            : null
-          }
-        </li>
+        <FilterButton
+          title={tag}
+          action={updateTags}
+          active={isActive(1, tag, filterOptions)}
+          size="sm"
+        />{' '}
       </React.Fragment>
-    )
-  }
+    );
+  });
+
+  return (
+    <React.Fragment>
+      <li>
+        <p onClick={() => setVideoShowing(!videoShowing)}>{track.name}{' '}
+          {button}
+        </p>
+        <div className="filter-options">
+          {genres}
+          {tags}
+        </div>
+        { videoShowing
+          ? <ReactPlayer
+            url={track.url}
+            playing={true}
+            controls={true}
+          />
+          : null
+        }
+      </li>
+    </React.Fragment>
+  )
 }
 
 export default Track;
