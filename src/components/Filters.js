@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FilterButton from "./FilterButton";
 
-const Filters = ({updateGenres, stateGenre, updateTags, stateTag}) => {
+const Filters = ({ updateGenres, stateGenre, updateTags, stateTag }) => {
   return (
     <div>
       <p>Genres:</p>
@@ -24,8 +24,7 @@ const Filters = ({updateGenres, stateGenre, updateTags, stateTag}) => {
         <FilterButton title="Female Vocalist" action={updateTags} active={stateTag.femaleVocalist}/>{' '}
         <FilterButton title="Male Vocalist" action={updateTags} active={stateTag.maleVocalist}/>{' '}
         <FilterButton title="Girl Group" action={updateTags} active={stateTag.girlGroup}/>{' '}
-        <FilterButton title="OST" action={updateTags} active={stateTag.ost}/>{' '}
-        <FilterButton title="Korean" action={updateTags} active={stateTag.korean}/>
+        <FilterButton title="OST" action={updateTags} active={stateTag.ost}/>
       </div>
     </div>
   )
