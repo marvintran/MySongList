@@ -68,17 +68,19 @@ const App = () => {
     });
   }
 
-    function removeGenre(value) {
+  function removeGenre(value) {
+    let toCamelCase = value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
     setGenre({
       ...filterGenre,
-      [value]: false
+      [toCamelCase]: false
     });
   }
 
   function removeTag(value) {
+    let toCamelCase = value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
     setTag({
       ...filterTag,
-      [value]: false
+      [toCamelCase]: false
     });
   }
 
