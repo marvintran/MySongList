@@ -1,51 +1,46 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import { BiX } from "react-icons/bi";
+import FilterButton from "./FilterButton";
 
-class CurrentFilters extends React.Component {
-  genreClick(value) {
-    this.props.removeGenres(value);
-  }
+// https://stackoverflow.com/a/7225450
+function camelCaseToNormal(value) {
+  if(value === "ost")
+    return "OST";
+  let result = value.replace( /([A-Z])/g, " $1" );
+  let finalResult = result.charAt(0).toUpperCase() + result.slice(1);
+  return finalResult;
+}
 
-  tagClick(value) {
-    this.props.removeTags(value);
-  }
-
-  // https://stackoverflow.com/a/7225450
-  camelCaseToNormal(value) {
-    if(value === "ost")
-      return "OST";
-    let result = value.replace( /([A-Z])/g, " $1" );
-    let finalResult = result.charAt(0).toUpperCase() + result.slice(1);
-    return finalResult;
-  }
-
-  render() {
-    const genres = this.props.filterOptions[0].map((genre) => {
-      return (
-        <React.Fragment>
-          <Button onClick={() => this.genreClick(genre)} variant="outline-primary" active>
-            {this.camelCaseToNormal(genre)}<BiX/>
-          </Button>{' '}
-        </React.Fragment>);
-    });
-
-    const tags = this.props.filterOptions[1].map((tag) => {
-      return (
-        <React.Fragment>
-          <Button onClick={() => this.tagClick(tag)} variant="outline-primary" active>
-            {this.camelCaseToNormal(tag)}<BiX/>
-          </Button>{' '}
-        </React.Fragment>);
-    });
-
+const CurrentFilters = ({ filterOptions, removeGenres, removeTags }) => {
+  const genres = filterOptions[0].map((genre) => {
     return (
-      <div>
-        {genres}
-        {tags}
-      </div>
-    )
-  }
+      <React.Fragment>
+        <FilterButton
+          title={camelCaseToNormal(genre)}
+          action={removeGenres}
+          active={true}
+          currentFilter={true}
+        />{' '}
+      </React.Fragment>);
+  });
+
+  const tags = filterOptions[1].map((tag) => {
+    return (
+      <React.Fragment>
+        <FilterButton
+          title={camelCaseToNormal(tag)}
+          action={removeTags}
+          active={true}
+          currentFilter={true}
+        />{' '}
+      </React.Fragment>);
+  });
+
+  return (
+    <div>
+      {genres}
+      {tags}
+    </div>
+  )
 }
 
 export default CurrentFilters;
