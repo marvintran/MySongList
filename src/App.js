@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SearchBar from "./components/SearchBar";
 import MonthList from "./components/MonthList";
 import CurrentFilters from "./components/CurrentFilters";
@@ -10,230 +10,193 @@ import january2020 from './data/2020_01_january.json';
 import february2020 from './data/2020_02_february.json';
 import march2020 from './data/2020_03_march.json';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      filterText: '',
-      filterGenre: {
-        ballad: false,
-        indie: false,
-        rock: false,
-        pop: false,
-        acoustic: false,
-        jazz: false
-        },
-      filterTag: {
-        korean: false,
-        japanese: false,
-        english: false,
-        femaleVocalist: false,
-        maleVocalist: false,
-        girlGroup: false,
-        boyGroup: false,
-        ost: false
-      },
-      toggleYear2020: true,
-      toggleYear2019: true,
-      toggleYear2018: true,
-      toggleYear2017: true
-    };
+// https://www.digitalocean.com/community/tutorials/how-to-share-state-across-react-components-with-context
+const genres = {
+  ballad: false,
+  indie: false,
+  rock: false,
+  pop: false,
+  acoustic: false,
+  jazz: false
+}
 
-    this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
-    this.updateGenre = this.updateGenre.bind(this);
-    this.updateTag = this.updateTag.bind(this);
-    this.removeGenre = this.removeGenre.bind(this);
-    this.removeTag = this.removeTag.bind(this);
-    this.selectedFilters = this.selectedFilters.bind(this);
-  }
+const tags = {
+  korean: false,
+  japanese: false,
+  english: false,
+  femaleVocalist: false,
+  maleVocalist: false,
+  girlGroup: false,
+  boyGroup: false,
+  ost: false
+}
 
-  handleFilterTextChange(filterText) {
-    this.setState({
-      filterText: filterText
+const App = () => {
+  const [toggleYear2020, setYear2020] = useState(true);
+  const [toggleYear2019, setYear2019] = useState(true);
+  const [toggleYear2018, setYear2018] = useState(true);
+  const [toggleYear2017, setYear2017] = useState(true);
+  const [toggleYear2016, setYear2016] = useState(true);
+  const [filterText, setFilterText] = useState('');
+  const [filterGenre, setGenre] = useState(genres);
+  const [filterTag, setTag] = useState(tags);
+
+  // Dynamic State, use computed Property
+  // https://stackoverflow.com/a/53986441
+
+  // Updating nested state object
+  // https://stackoverflow.com/a/43639228
+
+  // https://daveceddia.com/usestate-hook-examples/
+  function updateGenre(value) {
+    let toCamelCase = value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+
+    setGenre({
+      ...filterGenre,
+      [toCamelCase]: !filterGenre[toCamelCase]
     });
   }
 
-  //https://stackoverflow.com/a/53986441
-  //https://stackoverflow.com/a/43639228
-  updateGenre(value) {
-    let toCamelCase = value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
-
-    this.setState(prevState => ({
-      filterGenre: {
-        ...prevState.filterGenre,
-        [toCamelCase]: !this.state.filterGenre[toCamelCase]
-      }
-    }))
-  }
-
-  updateTag(value) {
+  function updateTag(value) {
     let toCamelCase = value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
     if(value === "OST")
       toCamelCase = "ost";
 
-    this.setState(prevState => ({
-      filterTag: {
-        ...prevState.filterTag,
-        [toCamelCase]: !this.state.filterTag[toCamelCase]
-      }
-    }))
+    setTag({
+      ...filterTag,
+      [toCamelCase]: !filterTag[toCamelCase]
+    });
   }
 
-  removeGenre(value) {
-    this.setState(prevState => ({
-      filterGenre: {
-        ...prevState.filterGenre,
-        [value]: false
-      }
-    }))
+    function removeGenre(value) {
+    setGenre({
+      ...filterGenre,
+      [value]: false
+    });
   }
 
-  removeTag(value) {
-    this.setState(prevState => ({
-      filterTag: {
-        ...prevState.filterTag,
-        [value]: false
-      }
-    }))
+  function removeTag(value) {
+    setTag({
+      ...filterTag,
+      [value]: false
+    });
   }
 
-  selectedFilters() {
-    const genres = Object.keys(this.state.filterGenre)
-      .filter((genre) => this.state.filterGenre[genre] === true)
+  function selectedFilters() {
+    const genres = Object.keys(filterGenre)
+      .filter((genre) => filterGenre[genre] === true)
       .map((genre) => { return genre });
 
-    const tags = Object.keys(this.state.filterTag)
-      .filter((tag) => this.state.filterTag[tag] === true)
+    const tags = Object.keys(filterTag)
+      .filter((tag) => filterTag[tag] === true)
       .map((tag) => { return tag });
 
     return [genres, tags];
   }
 
-  render() {
-    return (
+  return (
+    <Container>
       <Container>
-        <Container>
-          <SearchBar
-            filterText={this.state.filterText}
-            onFilterTextChange={this.handleFilterTextChange}
-          />
-          <CurrentFilters
-            filterOptions={this.selectedFilters()}
-            removeGenres={this.removeGenre}
-            removeTags={this.removeTag}
-          />
-          <Filters
-            updateGenres={this.updateGenre}
-            updateTags={this.updateTag}
-            stateGenre={this.state.filterGenre}
-            stateTag={this.state.filterTag}
-          />
-        </Container>
-
-        <Container>
-          <h1 onClick={() =>
-            this.setState({
-              toggleYear2020: !this.state.toggleYear2020
-            })}
-          >
-            2020
-          </h1>
-          <Collapse in={this.state.toggleYear2020}>
-            <div>
-              <MonthList
-                month={"March 2020"}
-                songs={march2020.songs}
-                filterText={this.state.filterText}
-                filterOptions={this.selectedFilters()}
-                updateGenres={this.updateGenre}
-                updateTags={this.updateTag}
-              />
-              <MonthList
-                month={"February 2020"}
-                songs={february2020.songs}
-                filterText={this.state.filterText}
-                filterOptions={this.selectedFilters()}
-                updateGenres={this.updateGenre}
-                updateTags={this.updateTag}
-              />
-              <MonthList
-                month={"January 2020"}
-                songs={january2020.songs}
-                filterText={this.state.filterText}
-                filterOptions={this.selectedFilters()}
-                updateGenres={this.updateGenre}
-                updateTags={this.updateTag}
-              />
-            </div>
-          </Collapse>
-        </Container>
-
-        <Container>
-          <h1 onClick={() =>
-            this.setState({
-              toggleYear2019: !this.state.toggleYear2019
-            })}
-          >
-            2019
-          </h1>
-          { this.state.toggleYear2019
-            ? <React.Fragment>
-
-              </React.Fragment>
-            : null
-          }
-        </Container>
-
-        <Container>
-          <h1 onClick={() =>
-            this.setState({
-              toggleYear2018: !this.state.toggleYear2018
-            })}
-          >
-            2018
-          </h1>
-          { this.state.toggleYear2018
-            ? <React.Fragment>
-
-              </React.Fragment>
-            : null
-          }
-        </Container>
-
-        <Container>
-          <h1 onClick={() =>
-            this.setState({
-              toggleYear2017: !this.state.toggleYear2017
-            })}
-          >
-            2017
-          </h1>
-          { this.state.toggleYear2017
-            ? <React.Fragment>
-
-              </React.Fragment>
-            : null
-          }
-        </Container>
-
-        <Container>
-          <h1 onClick={() =>
-            this.setState({
-              toggleYear2016: !this.state.toggleYear2016
-            })}
-          >
-            2016
-          </h1>
-          { this.state.toggleYear2016
-            ? <React.Fragment>
-
-              </React.Fragment>
-            : null
-          }
-        </Container>
+        <SearchBar
+          filterText={filterText}
+          onFilterTextChange={setFilterText}
+        />
+        <CurrentFilters
+          filterOptions={selectedFilters()}
+          removeGenres={removeGenre}
+          removeTags={removeTag}
+        />
+        <Filters
+          updateGenres={updateGenre}
+          updateTags={updateTag}
+          stateGenre={filterGenre}
+          stateTag={filterTag}
+        />
       </Container>
-    )
-  }
+
+      <Container>
+        <h1 onClick={() => setYear2020(!toggleYear2020)}>
+          2020
+        </h1>
+        <Collapse in={toggleYear2020}>
+          <div>
+            <MonthList
+              month={"March 2020"}
+              songs={march2020.songs}
+              filterText={filterText}
+              filterOptions={selectedFilters()}
+              updateGenres={updateGenre}
+              updateTags={updateTag}
+            />
+            <MonthList
+              month={"February 2020"}
+              songs={february2020.songs}
+              filterText={filterText}
+              filterOptions={selectedFilters()}
+              updateGenres={updateGenre}
+              updateTags={updateTag}
+            />
+            <MonthList
+              month={"January 2020"}
+              songs={january2020.songs}
+              filterText={filterText}
+              filterOptions={selectedFilters()}
+              updateGenres={updateGenre}
+              updateTags={updateTag}
+            />
+          </div>
+        </Collapse>
+      </Container>
+
+      <Container>
+        <h1 onClick={() => setYear2019(!toggleYear2019)}>
+          2019
+        </h1>
+        { toggleYear2019
+          ? <React.Fragment>
+
+          </React.Fragment>
+          : null
+        }
+      </Container>
+
+      <Container>
+        <h1 onClick={() => setYear2018(!toggleYear2018)}>
+          2018
+        </h1>
+        { toggleYear2018
+          ? <React.Fragment>
+
+          </React.Fragment>
+          : null
+        }
+      </Container>
+
+      <Container>
+        <h1 onClick={() => setYear2017(!toggleYear2017)}>
+          2017
+        </h1>
+        { toggleYear2017
+          ? <React.Fragment>
+
+          </React.Fragment>
+          : null
+        }
+      </Container>
+
+      <Container>
+        <h1 onClick={() => setYear2016(!toggleYear2016)}>
+          2016
+        </h1>
+        { toggleYear2016
+          ? <React.Fragment>
+
+          </React.Fragment>
+          : null
+        }
+      </Container>
+    </Container>
+  )
 }
 
 export default App;
