@@ -1,0 +1,13 @@
+// https://create-react-app.dev/docs/adding-bootstrap/
+
+// Override default variables before the import
+$btn-border-radius: 2rem !important;
+$btn-padding-y: .225rem;
+$btn-padding-x: .55rem;
+
+$btn-font-size-sm: .65rem;
+$btn-padding-y-sm: .1rem;
+$btn-padding-x-sm: .25rem;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
