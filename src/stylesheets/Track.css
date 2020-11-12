@@ -9,13 +9,3 @@ p {
     margin: 0;
     padding: 0;
 }
-
-.btn {
-    border-radius: 2rem !important;
-    padding: .225rem .55rem;
-}
-
-.btn-sm {
-    font-size: .65rem;
-    padding: .1rem .25rem;
-}
