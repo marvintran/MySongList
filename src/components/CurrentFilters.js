@@ -1,5 +1,6 @@
 import React from 'react';
 import FilterButton from "./FilterButton";
+import "../stylesheets/CurrentFilters.css";
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
@@ -36,7 +37,7 @@ const CurrentFilters = ({ filterOptions, removeGenres, removeTags }) => {
   });
 
   return (
-    <div>
+    <div className="current-filters">
       {genres}
       {tags}
     </div>
