@@ -5,7 +5,6 @@ import CurrentFilters from "./components/CurrentFilters";
 import Filters from "./components/Filters";
 import Container from 'react-bootstrap/Container';
 import Collapse from 'react-bootstrap/Collapse';
-import { FilterProvider } from './components/filter-context';
 
 import january2020 from './data/2020_01_january.json';
 import february2020 from './data/2020_02_february.json';
@@ -22,85 +21,83 @@ const App = () => {
   const [toggleYear2016, setYear2016] = useState(true);
 
   return (
-    <FilterProvider>
+    <Container>
       <Container>
-        <Container>
-          <SearchBar/>
-          <CurrentFilters/>
-          <Filters/>
-        </Container>
-
-        <Container>
-          <h1 onClick={() => setYear2020(!toggleYear2020)}>
-            2020
-          </h1>
-          <Collapse in={toggleYear2020}>
-            <div>
-              <MonthList
-                month={"March 2020"}
-                songs={march2020.songs}
-              />
-              <MonthList
-                month={"February 2020"}
-                songs={february2020.songs}
-              />
-              <MonthList
-                month={"January 2020"}
-                songs={january2020.songs}
-              />
-            </div>
-          </Collapse>
-        </Container>
-
-        <Container>
-          <h1 onClick={() => setYear2019(!toggleYear2019)}>
-            2019
-          </h1>
-          { toggleYear2019
-            ? <React.Fragment>
-
-            </React.Fragment>
-            : null
-          }
-        </Container>
-
-        <Container>
-          <h1 onClick={() => setYear2018(!toggleYear2018)}>
-            2018
-          </h1>
-          { toggleYear2018
-            ? <React.Fragment>
-
-            </React.Fragment>
-            : null
-          }
-        </Container>
-
-        <Container>
-          <h1 onClick={() => setYear2017(!toggleYear2017)}>
-            2017
-          </h1>
-          { toggleYear2017
-            ? <React.Fragment>
-
-            </React.Fragment>
-            : null
-          }
-        </Container>
-
-        <Container>
-          <h1 onClick={() => setYear2016(!toggleYear2016)}>
-            2016
-          </h1>
-          { toggleYear2016
-            ? <React.Fragment>
-
-            </React.Fragment>
-            : null
-          }
-        </Container>
+        <SearchBar/>
+        <CurrentFilters/>
+        <Filters/>
       </Container>
-    </FilterProvider>
+
+      <Container>
+        <h1 onClick={() => setYear2020(!toggleYear2020)}>
+          2020
+        </h1>
+        <Collapse in={toggleYear2020}>
+          <div>
+            <MonthList
+              month={"March 2020"}
+              songs={march2020.songs}
+            />
+            <MonthList
+              month={"February 2020"}
+              songs={february2020.songs}
+            />
+            <MonthList
+              month={"January 2020"}
+              songs={january2020.songs}
+            />
+          </div>
+        </Collapse>
+      </Container>
+
+      <Container>
+        <h1 onClick={() => setYear2019(!toggleYear2019)}>
+          2019
+        </h1>
+        { toggleYear2019
+          ? <React.Fragment>
+
+          </React.Fragment>
+          : null
+        }
+      </Container>
+
+      <Container>
+        <h1 onClick={() => setYear2018(!toggleYear2018)}>
+          2018
+        </h1>
+        { toggleYear2018
+          ? <React.Fragment>
+
+          </React.Fragment>
+          : null
+        }
+      </Container>
+
+      <Container>
+        <h1 onClick={() => setYear2017(!toggleYear2017)}>
+          2017
+        </h1>
+        { toggleYear2017
+          ? <React.Fragment>
+
+          </React.Fragment>
+          : null
+        }
+      </Container>
+
+      <Container>
+        <h1 onClick={() => setYear2016(!toggleYear2016)}>
+          2016
+        </h1>
+        { toggleYear2016
+          ? <React.Fragment>
+
+          </React.Fragment>
+          : null
+        }
+      </Container>
+    </Container>
   )
 }
 
