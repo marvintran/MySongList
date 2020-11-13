@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Track from "./Track"
 import "../stylesheets/Songs.css";
+import { FilterContext } from './filter-context';
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
@@ -54,24 +55,21 @@ function hasFilters(track, filterOptions) {
   return hasGenre && hasTag;
 }
 
-const Songs = ({ song, filterText, filterOptions, updateGenres, updateTags }) => {
+const Songs = ({ song }) => {
+  const filters = useContext(FilterContext);
+
   const artistName = song.artist.join(", ");
 
   const rows = song.tracks
     .filter((track) =>
-      ( artistName.toLowerCase().indexOf(filterText.toLowerCase()) !== -1 ||
-        track.name.toLowerCase().indexOf(filterText.toLowerCase()) !== -1
+      ( artistName.toLowerCase().indexOf(filters.filterText.toLowerCase()) !== -1 ||
+        track.name.toLowerCase().indexOf(filters.filterText.toLowerCase()) !== -1
       )
-      && hasFilters(track, filterOptions)
+      && hasFilters(track, filters.selectedFilters())
     )
     .map((track) => {
       return(
-        <Track
-          track={track}
-          filterOptions={filterOptions}
-          updateGenres={updateGenres}
-          updateTags={updateTags}
-        />)
+        <Track track={track} />)
     });
 
   if(rows.length > 0) {

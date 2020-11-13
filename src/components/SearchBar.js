@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Form from 'react-bootstrap/Form'
+import { FilterContext } from './filter-context';
 
-const SearchBar = ({ filterText, onFilterTextChange }) => {
+const SearchBar = () => {
+  const filters = useContext(FilterContext);
+
   return (
     <React.Fragment>
       <Form>
@@ -9,8 +12,8 @@ const SearchBar = ({ filterText, onFilterTextChange }) => {
           <Form.Label>Search</Form.Label>
           <Form.Control type="text"
                         placeholder="Artist or Title"
-                        value={filterText}
-                        onChange={event => onFilterTextChange(event.target.value)}
+                        value={filters.filterText}
+                        onChange={event => filters.setFilterText(event.target.value)}
           />
         </Form.Group>
       </Form>

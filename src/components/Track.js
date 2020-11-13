@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, {useContext, useState} from 'react';
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { MdPlayCircleOutline } from "react-icons/md";
 import ReactPlayer from "react-player";
 import FilterButton from "./FilterButton";
 import "../stylesheets/Track.css";
+import { FilterContext } from './filter-context';
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
@@ -28,7 +29,8 @@ function isActive(index, value, filters) {
   return isActive;
 }
 
-const Track = ({ track, filterOptions, updateGenres, updateTags }) => {
+const Track = ({ track }) => {
+  const filters = useContext(FilterContext);
   const [videoShowing, setVideoShowing] = useState(false);
 
   if(track.url === "") {
@@ -49,8 +51,8 @@ const Track = ({ track, filterOptions, updateGenres, updateTags }) => {
         <React.Fragment>
           <FilterButton
             title={genre}
-            action={updateGenres}
-            active={isActive(0, genre, filterOptions)}
+            action={filters.updateGenre}
+            active={isActive(0, genre, filters.selectedFilters())}
             size="sm"
           />{' '}
         </React.Fragment>
@@ -61,8 +63,8 @@ const Track = ({ track, filterOptions, updateGenres, updateTags }) => {
         <React.Fragment>
           <FilterButton
             title={genre}
-            action={updateGenres}
-            active={isActive(0, genre, filterOptions)}
+            action={filters.updateGenre}
+            active={isActive(0, genre, filters.selectedFilters())}
             size="sm"
             className="last-button"
           />{' '}
@@ -75,8 +77,8 @@ const Track = ({ track, filterOptions, updateGenres, updateTags }) => {
       <React.Fragment>
         <FilterButton
           title={tag}
-          action={updateTags}
-          active={isActive(1, tag, filterOptions)}
+          action={filters.updateTag}
+          active={isActive(1, tag, filters.selectedFilters())}
           size="sm"
         />{' '}
       </React.Fragment>

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import FilterButton from "./FilterButton";
 import "../stylesheets/CurrentFilters.css";
+import { FilterContext } from './filter-context';
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
@@ -12,24 +13,26 @@ function camelCaseToNormal(value) {
 }
 
 const CurrentFilters = ({ filterOptions, removeGenres, removeTags }) => {
-  const genres = filterOptions[0].map((genre) => {
+  const filters = useContext(FilterContext);
+
+  const genres = filters.selectedFilters()[0].map((genre) => {
     return (
       <React.Fragment>
         <FilterButton
           title={camelCaseToNormal(genre)}
-          action={removeGenres}
+          action={filters.removeGenre}
           active={true}
           currentFilter={true}
         />{' '}
       </React.Fragment>);
   });
 
-  const tags = filterOptions[1].map((tag) => {
+  const tags = filters.selectedFilters()[1].map((tag) => {
     return (
       <React.Fragment>
         <FilterButton
           title={camelCaseToNormal(tag)}
-          action={removeTags}
+          action={filters.removeTag}
           active={true}
           currentFilter={true}
         />{' '}
