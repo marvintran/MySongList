@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import Songs from './Songs'
 import Collapse from 'react-bootstrap/Collapse';
+import LazyLoad from 'react-lazyload';
 
 const MonthList = ({ month, songs }) => {
   const [monthShowing, setMonthShowing] = useState(true);
 
   const songList = songs.map((song) => {
     return (
-      <Songs song={song} />
+      <LazyLoad>
+        <Songs song={song}/>
+      </LazyLoad>
     )});
 
   return (
