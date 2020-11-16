@@ -10,9 +10,6 @@ import january2020 from './data/2020_01_january.json';
 import february2020 from './data/2020_02_february.json';
 import march2020 from './data/2020_03_march.json';
 
-// https://web.dev/virtualize-long-lists-react-window/
-// memoize
-
 const App = () => {
   const [toggleYear2020, setYear2020] = useState(true);
   const [toggleYear2019, setYear2019] = useState(true);
