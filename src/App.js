@@ -51,48 +51,44 @@ const App = () => {
         <h1 onClick={() => setYear2019(!toggleYear2019)}>
           2019
         </h1>
-        { toggleYear2019
-          ? <React.Fragment>
+        <Collapse in={toggleYear2019}>
+          <div>
 
-          </React.Fragment>
-          : null
-        }
+          </div>
+        </Collapse>
       </Container>
 
       <Container>
         <h1 onClick={() => setYear2018(!toggleYear2018)}>
           2018
         </h1>
-        { toggleYear2018
-          ? <React.Fragment>
+        <Collapse in={toggleYear2018}>
+          <div>
 
-          </React.Fragment>
-          : null
-        }
+          </div>
+        </Collapse>
       </Container>
 
       <Container>
         <h1 onClick={() => setYear2017(!toggleYear2017)}>
           2017
         </h1>
-        { toggleYear2017
-          ? <React.Fragment>
+        <Collapse in={toggleYear2017}>
+          <div>
 
-          </React.Fragment>
-          : null
-        }
+          </div>
+        </Collapse>
       </Container>
 
       <Container>
         <h1 onClick={() => setYear2016(!toggleYear2016)}>
           2016
         </h1>
-        { toggleYear2016
-          ? <React.Fragment>
+        <Collapse in={toggleYear2016}>
+          <div>
 
-          </React.Fragment>
-          : null
-        }
+          </div>
+        </Collapse>
       </Container>
     </Container>
   )
