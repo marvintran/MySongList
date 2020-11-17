@@ -40,9 +40,9 @@ const Track = ({ track }) => {
   let button;
 
   if(videoShowing) {
-    button = <AiOutlineMinusCircle/>;
+    button = <AiOutlineMinusCircle size={23} className="cursor-pointer"/>;
   } else {
-    button = <MdPlayCircleOutline/>
+    button = <MdPlayCircleOutline size={23} className="cursor-pointer"/>
   }
 
   const genres = track.genre.map((genre, index) => {
@@ -88,7 +88,8 @@ const Track = ({ track }) => {
   return (
     <React.Fragment>
       <li>
-        <p onClick={() => setVideoShowing(!videoShowing)}>{track.name}{' '}
+        <p onClick={() => setVideoShowing(!videoShowing)}>
+          {track.name}{' '}
           {button}
         </p>
         <div className="filter-options">
