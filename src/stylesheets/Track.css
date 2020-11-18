@@ -14,3 +14,7 @@ p {
     cursor: pointer;
     vertical-align: text-top;
 }
+
+li {
+    margin-left: 40px;
+}

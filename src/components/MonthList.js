@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import '../stylesheets/MonthList.css';
 import Songs from './Songs'
 import Collapse from 'react-bootstrap/Collapse';
 import LazyLoad from 'react-lazyload';
 
-const MonthList = ({ month, songs }) => {
+const MonthList = ({ month, songs, id }) => {
   const [monthShowing, setMonthShowing] = useState(true);
 
   const songList = songs.map((song) => {
@@ -15,7 +16,7 @@ const MonthList = ({ month, songs }) => {
 
   return (
     <React.Fragment>
-      <h2 onClick={() => setMonthShowing(!monthShowing)}>{month}</h2>
+      <h2 id={id} className="header-month" onClick={() => setMonthShowing(!monthShowing)}>{month}</h2>
       <Collapse in={monthShowing}>
         <div>
           {songList}

@@ -1,0 +1,25 @@
+.month {
+    margin-left: 20px;
+}
+
+.marker {
+    height: 25px;
+    border-left: 4px solid rgb(97, 218, 251);
+    position: absolute;
+    left: 0px;
+}
+
+.nav-bar {
+    background-color: #f7f7f7;
+    height: 100vh;
+    display: inline-block;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.filters {
+    background-color: #f7f7f7;
+    height: 100vh;
+    padding: 16px;
+    position: fixed;
+}

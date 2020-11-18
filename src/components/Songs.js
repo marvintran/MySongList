@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import Track from "./Track"
 import "../stylesheets/Songs.css";
+import Track from "./Track"
 import { FilterContext } from './filter-context';
 
 // https://stackoverflow.com/a/7225450
@@ -75,7 +75,7 @@ const Songs = ({ song }) => {
   if(rows.length > 0) {
     return (
       <React.Fragment>
-        <h5>{artistName}</h5>
+        <h5 className="header-artist">{artistName}</h5>
         <ul>
           {rows}
         </ul>
