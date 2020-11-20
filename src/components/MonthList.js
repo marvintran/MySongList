@@ -3,8 +3,9 @@ import '../stylesheets/MonthList.css';
 import Songs from './Songs'
 import Collapse from 'react-bootstrap/Collapse';
 import LazyLoad from 'react-lazyload';
+import { Waypoint } from 'react-waypoint';
 
-const MonthList = ({ month, songs, id }) => {
+const MonthList = ({ month, songs, id, action }) => {
   const [monthShowing, setMonthShowing] = useState(true);
 
   const songList = songs.map((song) => {
@@ -16,12 +17,16 @@ const MonthList = ({ month, songs, id }) => {
 
   return (
     <React.Fragment>
-      <h2 id={id} className="header-month" onClick={() => setMonthShowing(!monthShowing)}>{month}</h2>
-      <Collapse in={monthShowing}>
+      <Waypoint onEnter={() => {action(month)}} bottomOffset={602}>
         <div>
-          {songList}
+          <h2 id={id} className="header-month" onClick={() => setMonthShowing(!monthShowing)}>{month}</h2>
+          <Collapse in={monthShowing}>
+            <div>
+              {songList}
+            </div>
+          </Collapse>
         </div>
-      </Collapse>
+      </Waypoint>
     </React.Fragment>
   )
 }

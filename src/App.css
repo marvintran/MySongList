@@ -12,7 +12,7 @@
 .nav-bar {
     background-color: #f7f7f7;
     height: 100vh;
-    display: inline-block;
+    display: block;
     overflow-y: auto;
     position: fixed;
 }
