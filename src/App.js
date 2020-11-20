@@ -11,7 +11,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Collapse from 'react-bootstrap/Collapse';
-import Nav from 'react-bootstrap/Nav';
 
 import january2020 from './data/2020_01_january.json';
 import february2020 from './data/2020_02_february.json';
