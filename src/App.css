@@ -2,16 +2,10 @@
     margin-left: 20px;
 }
 
-.marker {
-    height: 25px;
-    border-left: 4px solid rgb(97, 218, 251);
-    position: absolute;
-    left: 0px;
-}
-
 .nav-bar {
     background-color: #f7f7f7;
     height: 100vh;
+    min-width: 176px;
     display: block;
     overflow-y: auto;
     position: fixed;

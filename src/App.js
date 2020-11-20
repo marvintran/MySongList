@@ -33,7 +33,7 @@ const App = () => {
       <Container fluid>
         <Row>
           <Col>
-            <Nav defaultActiveKey="#2020" className="nav-bar">
+            <div className="nav-bar">
               <NavLink title={"2020"} currMarker={currMarker}/>
               <NavLink title={"March 2020"} currMarker={currMarker} className={"month"}/>
               <NavLink title={"February 2020"} currMarker={currMarker} className={"month"}/>
@@ -45,7 +45,7 @@ const App = () => {
               <NavLink title={"2018"} currMarker={currMarker}/>
               <NavLink title={"2017"} currMarker={currMarker}/>
               <NavLink title={"2016"} currMarker={currMarker}/>
-            </Nav>
+            </div>
           </Col>
           <Col md="auto">
             <Waypoint onEnter={() => {setMarker("2020")}} bottomOffset={bottomOffSet}>

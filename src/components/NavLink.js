@@ -1,6 +1,6 @@
 import React from 'react';
 import '../stylesheets/NavLink.css';
-import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-scroll'
 
 const NavLink = ({ title, currMarker, className}) => {
   let toCamelCase = title.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
@@ -10,13 +10,18 @@ const NavLink = ({ title, currMarker, className}) => {
     css = "active " + css;
 
   return (
-    <Nav.Link href={ "#" + toCamelCase} className={css}>
-      { currMarker === title
-        ? <span className="marker"/>
-        : null
-      }
-      {title}
-    </Nav.Link>
+    <Link
+      to={toCamelCase}
+      duration={1500}
+    >
+      <div className={css}>
+        { currMarker === title
+          ? <span className="marker"/>
+          : null
+        }
+        {title}
+      </div>
+    </Link>
   )
 }
 
