@@ -17,7 +17,7 @@ const MonthList = ({ month, songs, id, action }) => {
 
   return (
     <React.Fragment>
-      <Waypoint onEnter={() => {action(month)}} bottomOffset={602}>
+      <Waypoint onEnter={() => {action(month)}} bottomOffset={window.innerHeight-1}>
         <div>
           <h2 id={id} className="header-month" onClick={() => setMonthShowing(!monthShowing)}>{month}</h2>
           <Collapse in={monthShowing}>

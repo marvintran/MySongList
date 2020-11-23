@@ -26,7 +26,7 @@ const App = () => {
 
   const [currMarker, setMarker] = useState("2020");
 
-  let bottomOffSet = 602;
+  let bottomOffSet = window.innerHeight-1;
 
   return (
       <Container fluid>
