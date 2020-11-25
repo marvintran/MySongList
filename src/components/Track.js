@@ -97,11 +97,16 @@ const Track = ({ track }) => {
           {tags}
         </div>
         { videoShowing
-          ? <ReactPlayer
-            url={track.url}
-            playing={true}
-            controls={true}
-          />
+          ? <div className='player-wrapper'>
+              <ReactPlayer
+                className="react-player"
+                url={track.url}
+                playing={true}
+                controls={true}
+                width={"100%"}
+                height={"100%"}
+              />
+            </div>
           : null
         }
       </li>

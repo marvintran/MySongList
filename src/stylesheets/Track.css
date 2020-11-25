@@ -1,3 +1,12 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 40px;
+}
+
 .filter-options {
     margin-bottom: .3em;
 }
@@ -6,16 +15,18 @@
     margin-right: 3em;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-}
-
 .cursor-pointer {
     cursor: pointer;
     vertical-align: text-top;
 }
 
-li {
-    margin-left: 40px;
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: -40px;
 }
