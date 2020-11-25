@@ -49,10 +49,16 @@ const App = () => {
           </Col>
           <Col className="content">
             <Waypoint onEnter={() => {setMarker("2020")}} bottomOffset={bottomOffSet}>
-              <div>
-                <h1 id="2020" onClick={() => setYear2020(!toggleYear2020)}>
+              <div className="header-year">
+                <h1 id="2020" >
                   2020
                 </h1>
+                <p onClick={() => setYear2020(!toggleYear2020)} className="minimize">
+                  { toggleYear2020
+                    ? "Hide"
+                    : "Show"
+                  }
+                </p>
               </div>
             </Waypoint>
 
@@ -80,10 +86,16 @@ const App = () => {
             </Collapse>
 
             <Waypoint onEnter={() => {setMarker("2019")}} bottomOffset={bottomOffSet}>
-              <div>
-                <h1 id="2019" onClick={() => setYear2019(!toggleYear2019)}>
+              <div className="header-year">
+                <h1 id="2019" >
                   2019
                 </h1>
+                <p onClick={() => setYear2019(!toggleYear2019)} className="minimize">
+                  { toggleYear2019
+                    ? "Hide"
+                    : "Show"
+                  }
+                </p>
               </div>
             </Waypoint>
             <Collapse in={toggleYear2019}>
@@ -110,10 +122,16 @@ const App = () => {
             </Collapse>
 
             <Waypoint onEnter={() => {setMarker("2018")}} bottomOffset={bottomOffSet}>
-              <div>
-                <h1 id="2018" onClick={() => setYear2018(!toggleYear2018)}>
+              <div className="header-year">
+                <h1 id="2018" >
                   2018
                 </h1>
+                <p onClick={() => setYear2018(!toggleYear2018)} className="minimize">
+                  { toggleYear2018
+                    ? "Hide"
+                    : "Show"
+                  }
+                </p>
               </div>
             </Waypoint>
             <Collapse in={toggleYear2018}>
@@ -123,10 +141,16 @@ const App = () => {
             </Collapse>
 
             <Waypoint onEnter={() => {setMarker("2017")}} bottomOffset={bottomOffSet}>
-              <div>
-                <h1 id="2017" onClick={() => setYear2017(!toggleYear2017)}>
+              <div className="header-year">
+                <h1 id="2017" >
                   2017
                 </h1>
+                <p onClick={() => setYear2017(!toggleYear2017)} className="minimize">
+                  { toggleYear2017
+                    ? "Hide"
+                    : "Show"
+                  }
+                </p>
               </div>
             </Waypoint>
             <Collapse in={toggleYear2017}>
@@ -136,10 +160,16 @@ const App = () => {
             </Collapse>
 
             <Waypoint onEnter={() => {setMarker("2016")}} bottomOffset={bottomOffSet}>
-              <div>
-                <h1 id="2016" onClick={() => setYear2016(!toggleYear2016)}>
+              <div className="header-year">
+                <h1 id="2016" >
                   2016
                 </h1>
+                <p onClick={() => setYear2016(!toggleYear2016)} className="minimize">
+                  { toggleYear2016
+                    ? "Hide"
+                    : "Show"
+                  }
+                </p>
               </div>
             </Waypoint>
             <Collapse in={toggleYear2016}>

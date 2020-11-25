@@ -103,8 +103,8 @@ const Track = ({ track }) => {
                 url={track.url}
                 playing={true}
                 controls={true}
-                width={"100%"}
-                height={"100%"}
+                width="100%"
+                height="100%"
               />
             </div>
           : null
