@@ -2,13 +2,31 @@
     margin-left: 20px;
 }
 
+.nav-wrapper {
+    background-color: #f7f7f7;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 176px;
+    padding-top: 8px;
+}
+
 .nav-bar {
     background-color: #f7f7f7;
     height: 100vh;
-    min-width: 176px;
     display: block;
     overflow-y: auto;
     position: fixed;
+    padding-left: 10px;
+}
+
+.content {
+    padding-top: 8px;
+}
+
+.filters-wrapper {
+    background-color: #f7f7f7;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .filters {

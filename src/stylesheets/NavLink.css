@@ -18,6 +18,7 @@ a {
     border-left: 4px solid rgb(97, 218, 251);
     position: absolute;
     left: 0px;
+    margin-left: 10px;
 }
 
 .active {

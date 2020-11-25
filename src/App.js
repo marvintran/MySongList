@@ -29,9 +29,10 @@ const App = () => {
   let bottomOffSet = window.innerHeight-1;
 
   return (
+    <React.Fragment>
       <Container fluid>
         <Row>
-          <Col>
+          <Col className="nav-wrapper">
             <div className="nav-bar">
               <NavLink title={"2020"} currMarker={currMarker}/>
               <NavLink title={"March 2020"} currMarker={currMarker} className={"month"}/>
@@ -46,7 +47,7 @@ const App = () => {
               <NavLink title={"2016"} currMarker={currMarker}/>
             </div>
           </Col>
-          <Col md="auto">
+          <Col className="content">
             <Waypoint onEnter={() => {setMarker("2020")}} bottomOffset={bottomOffSet}>
               <div>
                 <h1 id="2020" onClick={() => setYear2020(!toggleYear2020)}>
@@ -54,6 +55,7 @@ const App = () => {
                 </h1>
               </div>
             </Waypoint>
+
             <Collapse in={toggleYear2020}>
               <div>
                 <MonthList
@@ -146,15 +148,17 @@ const App = () => {
               </div>
             </Collapse>
           </Col>
-          <Col>
+          <Col md="3" className="filters-wrapper">
             <div className="filters">
               <SearchBar/>
               <CurrentFilters/>
               <Filters/>
             </div>
+
           </Col>
         </Row>
       </Container>
+    </React.Fragment>
   )
 }
 
