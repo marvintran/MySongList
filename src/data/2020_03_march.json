@@ -6,10 +6,10 @@
         {
           "name": "Reality Blue",
           "url": "https://www.youtube.com/watch?v=3b6UvRIsXvQ",
-          "genre": ["Ballad", "Indie", "Acoustic"],
-          "tags": ["Korean", "Female Vocalist"]
+          "genre": ["Ballad", "Indie", "Acoustic"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Female Vocalist"]
     },
     {
       "artist": ["Park So Eun (박소은)"],
@@ -17,22 +17,20 @@
         {
           "name": "Gogangdong (고강동)",
           "url": "https://www.youtube.com/watch?v=rBmCdJtd-tM",
-          "genre": ["Rock", "Indie"],
-          "tags": ["Korean", "Female Vocalist"]
+          "genre": ["Rock", "Indie"]
         },
         {
           "name": "Somehow (왠지)",
           "url": "https://www.youtube.com/watch?v=5vSymRNnQqM",
-          "genre": ["Ballad", "Acoustic", "Indie"],
-          "tags": ["Korean", "Female Vocalist"]
+          "genre": ["Ballad", "Acoustic", "Indie"]
         },
         {
           "name": "Satellite (위성에게)",
           "url": "https://www.youtube.com/watch?v=7sMMnONimdw",
-          "genre": ["Ballad", "Indie", "Rock"],
-          "tags": ["Korean", "Female Vocalist"]
+          "genre": ["Ballad", "Indie", "Rock"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Female Vocalist"]
     },
     {
       "artist": ["Sejeong (세정)"],
@@ -40,28 +38,25 @@
         {
           "name": "Hopes For Tomorrow (오늘은 괜찮아)",
           "url": "https://www.youtube.com/watch?v=jGHb1Lvoq7o",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Female Vocalist", "Girl Group"]
+          "genre": ["Ballad"]
         },
         {
           "name": "SKYLINE",
           "url": "https://www.youtube.com/watch?v=5C0EOUyA6lo",
-          "genre": ["Ballad", "Pop"],
-          "tags": ["Korean", "Female Vocalist", "Girl Group"]
+          "genre": ["Ballad", "Pop"]
         },
         {
           "name": "Swim Away (오리발)",
           "url": "https://www.youtube.com/watch?v=K-yS9yjP23U",
-          "genre": ["Ballad", "Pop"],
-          "tags": ["Korean", "Female Vocalist", "Girl Group"]
+          "genre": ["Ballad", "Pop"]
         },
         {
           "name": "In My Dream (꿈속에서 널)",
           "url": "https://www.youtube.com/watch?v=h0kOHb_BNAk",
-          "genre": ["Ballad", "Acoustic"],
-          "tags": ["Korean", "Female Vocalist", "Girl Group"]
+          "genre": ["Ballad", "Acoustic"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"]
     },
     {
       "artist": ["Kwon Jin Ah (권진아)"],
@@ -69,16 +64,21 @@
         {
           "name": "Lover (연인)",
           "url": "https://www.youtube.com/watch?v=uJWxbvuhvBQ",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Female Vocalist"]
-        },
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist"]
+    },
+    {
+      "artist": ["Kwon Jin Ah (권진아)"],
+      "tracks": [
         {
           "name": "Lonely Night",
           "url": "https://www.youtube.com/watch?v=3JJEAHst96w",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Female Vocalist", "OST"]
+          "genre": ["Ballad"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Female Vocalist", "OST"]
     },
     {
       "artist": ["Jukjae (적재)"],
@@ -86,10 +86,10 @@
         {
           "name": "Wish (바람)",
           "url": "https://www.youtube.com/watch?v=3SGS745SlOQ",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Male Vocalist", "OST"]
+          "genre": ["Ballad"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Male Vocalist", "OST"]
     },
     {
       "artist": ["Kwon Soonkwan (권순관)"],
@@ -97,29 +97,26 @@
         {
           "name": "이사",
           "url": "https://www.youtube.com/watch?v=3J1BMjOIeiQ",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad"]
         },
         {
           "name": "Connected (Feat. Crush)",
           "url": "https://www.youtube.com/watch?v=4O3SxGFdXmU",
-          "genre": ["R&B", "Soul", "Pop"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["R&B", "Soul", "Pop"]
 
         },
         {
           "name": "To You (너에게)",
           "url": "https://www.youtube.com/watch?v=mGlX-nKRoAY",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad"]
         },
         {
           "name": "Until We Meet Again (다시 만날 때까지)",
           "url": "https://www.youtube.com/watch?v=MLzek9zcz1o",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Male Vocalist"]
     },
     {
       "artist": ["ITZY"],
@@ -127,28 +124,25 @@
         {
           "name": "WANNABE",
           "url": "https://www.youtube.com/watch?v=fE2h3lGlOsk",
-          "genre": ["Pop"],
-          "tags": ["Korean", "Female Vocalist", "Girl Group"]
+          "genre": ["Pop"]
         },
         {
           "name": "I DON'T WANNA DANCE",
           "url": "https://www.youtube.com/watch?v=o_fKFQPUeDw",
-          "genre": ["Pop"],
-          "tags": ["Korean", "Female Vocalist", "Girl Group"]
+          "genre": ["Pop"]
         },
         {
           "name": "THAT'S A NO NO",
           "url": "https://www.youtube.com/watch?v=rhycnTdFc4A",
-          "genre": ["Pop"],
-          "tags": ["Korean", "Female Vocalist", "Girl Group"]
+          "genre": ["Pop"]
         },
         {
           "name": "YOU MAKE ME",
           "url": "https://www.youtube.com/watch?v=CWIGtBHy4eU",
-          "genre": ["Pop"],
-          "tags": ["Korean", "Female Vocalist", "Girl Group"]
+          "genre": ["Pop"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"]
     },
     {
       "artist": ["Yoo Hyung Kyun (유형균)"],
@@ -156,16 +150,15 @@
         {
           "name": "STARDUST",
           "url": "https://www.youtube.com/watch?v=LB_CYvOmXig",
-          "genre": ["Ballad", "Indie"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad", "Indie"]
         },
         {
           "name": "GRAVITY",
           "url": "https://www.youtube.com/watch?v=uRChrfnaWjg",
-          "genre": ["Ballad", "Indie", "Acoustic"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad", "Indie", "Acoustic"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Male Vocalist"]
     },
     {
       "artist": ["Park Ji Yoon (박지윤)"],
@@ -173,10 +166,10 @@
         {
           "name": "Flower (그날의 봄)",
           "url": "https://www.youtube.com/watch?v=8L0fzaaYQ7U",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Female Vocalist"]
+          "genre": ["Ballad"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Female Vocalist"]
     },
     {
       "artist": ["Han Dong Geun (한동근)"],
@@ -184,10 +177,10 @@
         {
           "name": "Candle (초)",
           "url": "https://www.youtube.com/watch?v=7ZWgzNcq1kc",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Male Vocalist"]
     },
     {
       "artist": ["Jung Seung Hwan (정승환)"],
@@ -195,10 +188,10 @@
         {
           "name": "I Am You (나는 너야)",
           "url": "https://www.youtube.com/watch?v=AU3l1MJ1uUI",
-          "genre": ["Ballad", "OST"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad", "OST"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Male Vocalist"]
     },
     {
       "artist": ["Fil (필)"],
@@ -206,10 +199,10 @@
         {
           "name": "Like Nothing (아무일 없던 것처럼)",
           "url": "https://www.youtube.com/watch?v=5aKqWhynUhY",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Male Vocalist"]
     },
     {
       "artist": ["SUHO (수호)"],
@@ -217,16 +210,15 @@
         {
           "name": "For You Now (Feat. Younha) (너의 차례 Feat. 윤하)",
           "url": "https://www.youtube.com/watch?v=3s19JUt1W-0",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad"]
         },
         {
           "name": "Self-Portrait (자화상)",
           "url": "https://www.youtube.com/watch?v=Bm0WreZrKQs",
-          "genre": ["Ballad"],
-          "tags": ["Korean", "Male Vocalist"]
+          "genre": ["Ballad"]
         }
-      ]
+      ],
+      "tags": ["Korean", "Male Vocalist"]
     },
     {
       "artist": ["Norah Jones"],
@@ -234,10 +226,10 @@
         {
           "name": "I'm Alive",
           "url": "https://www.youtube.com/watch?v=Hjv2mxOiej4",
-          "genre": ["R&B", "Soul", "Ballad"],
-          "tags": ["English", "Female Vocalist"]
+          "genre": ["R&B", "Soul", "Ballad"]
         }
-      ]
+      ],
+      "tags": ["English", "Female Vocalist"]
     },
     {
       "artist": ["Circa Waves"],
@@ -245,16 +237,15 @@
         {
           "name": "Jacqueline",
           "url": "https://www.youtube.com/watch?v=hXwozor5qz8",
-          "genre": ["Pop"],
-          "tags": ["English", "Male Vocalist"]
+          "genre": ["Pop"]
         },
         {
           "name": "Move to San Francisco",
           "url": "https://www.youtube.com/watch?v=mp8_fh7gUtY",
-          "genre": ["Pop"],
-          "tags": ["English", "Male Vocalist"]
+          "genre": ["Pop"]
         }
-      ]
+      ],
+      "tags": ["English", "Female Vocalist"]
     },
     {
       "artist": ["Fujita Maiko (藤田麻衣子)"],
@@ -262,16 +253,15 @@
         {
           "name": "chapter",
           "url": "https://www.youtube.com/watch?v=IV3aoObHUnw",
-          "genre": ["Ballad"],
-          "tags": ["Japanese", "Female Vocalist"]
+          "genre": ["Ballad"]
         },
         {
           "name": "Sono Koega Kikitakute",
           "url": "https://www.youtube.com/watch?v=NTJdo7glCME",
-          "genre": ["Ballad"],
-          "tags": ["Japanese", "Female Vocalist"]
+          "genre": ["Ballad"]
         }
-      ]
+      ],
+      "tags": ["Japanese", "Female Vocalist"]
     },
     {
       "artist": ["Ikimonogakari (いきものがかり)"],
@@ -279,10 +269,10 @@
         {
           "name": "Ikiru (生きる)",
           "url": "https://www.youtube.com/watch?v=BahbNpj340k",
-          "genre": ["Ballad"],
-          "tags": ["Japanese", "Female Vocalist"]
+          "genre": ["Ballad"]
         }
-      ]
+      ],
+      "tags": ["Japanese", "Female Vocalist"]
     }
   ]
 }

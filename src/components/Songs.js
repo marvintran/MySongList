@@ -3,6 +3,7 @@ import "../stylesheets/Songs.css";
 import Track from "./Track"
 import { FilterContext } from './filter-context';
 import DefaultAlbum from '../data/record_placeholder-f3f829566497dc26b0abfae50ddeb5c7bc48fe1c58dc1c7fe62a26d64988b9c9.svg';
+import FilterButton from "./FilterButton";
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
@@ -13,14 +14,14 @@ function camelCaseToNormal(value) {
   return finalResult;
 }
 
-function hasFilters(track, filterOptions) {
+function hasFilters(track, song, filterOptions) {
   let filters = filterOptions;
 
   if(filters[0].length === 0 && filters[1].length === 0)
     return true;
 
   let trackGenres = track.genre;
-  let trackTags = track.tags;
+  let songTags = song.tags;
 
   let hasGenre = true;
   let hasTag = true;
@@ -42,7 +43,7 @@ function hasFilters(track, filterOptions) {
   if(filters[1].length !== 0) {
     let aaa = filters[1].map((curr) => {
       let filterTag = camelCaseToNormal(curr);
-      return trackTags.includes(filterTag);
+      return songTags.includes(filterTag);
     });
 
     for(let i = 0; i < aaa.length; i++) {
@@ -56,6 +57,20 @@ function hasFilters(track, filterOptions) {
   return hasGenre && hasTag;
 }
 
+function isActive(index, value, filters) {
+  let isActive = false;
+  if(filters[index].length !== 0) {
+    for(let i = 0; i < filters[index].length; i++) {
+      let filterValue = camelCaseToNormal(filters[index][i]);
+      if(filterValue === value) {
+        isActive = true;
+        break;
+      }
+    }
+  }
+  return isActive;
+}
+
 const Songs = ({ song }) => {
   const filters = useContext(FilterContext);
 
@@ -66,29 +81,25 @@ const Songs = ({ song }) => {
       ( artistName.toLowerCase().indexOf(filters.filterText.toLowerCase()) !== -1 ||
         track.name.toLowerCase().indexOf(filters.filterText.toLowerCase()) !== -1
       )
-      && hasFilters(track, filters.selectedFilters())
+      && hasFilters(track, song, filters.selectedFilters())
     )
     .map((track) => {
       return(
         <Track track={track} />)
     });
 
-  let name = [];
-
-  if(artistName.includes("(")) {
-    artistName.split("(").map((token, index) => {
-      if(index > 0)
-        return(
-          name.push(<h5 className="header-artist">{"("}{token}</h5>)
-        )
-      else
-        name.push(<h5 className="header-artist">{token}</h5>)
-    });
-
-  } else {
-    name.push(<h5 className="header-artist">{artistName}</h5>);
-  }
-
+  const tags = song.tags.map((tag) => {
+    return (
+      <React.Fragment>
+        <FilterButton
+          title={tag}
+          action={filters.updateTag}
+          active={isActive(1, tag, filters.selectedFilters())}
+          size="sm"
+        />{' '}
+      </React.Fragment>
+    );
+  });
 
   if(rows.length > 0) {
     return (
@@ -107,7 +118,7 @@ const Songs = ({ song }) => {
           </div>
         </div>
         <div className="tags">
-          Korean • Female Vocalist • Girl Group
+          {tags}
         </div>
       </div>
     )}

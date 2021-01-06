@@ -72,19 +72,6 @@ const Track = ({ track }) => {
       );
   });
 
-  const tags = track.tags.map((tag) => {
-    return (
-      <React.Fragment>
-        <FilterButton
-          title={tag}
-          action={filters.updateTag}
-          active={isActive(1, tag, filters.selectedFilters())}
-          size="sm"
-        />{' '}
-      </React.Fragment>
-    );
-  });
-
   return (
     <React.Fragment>
       <li>

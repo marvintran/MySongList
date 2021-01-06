@@ -31,4 +31,6 @@ ul {
 
 .tags {
     text-align: center;
+    margin-top: 5px;
+    border-top: 2px solid #ececec;
 }
