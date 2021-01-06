@@ -4,7 +4,17 @@ p {
 }
 
 li {
-    margin-left: 20px;
+    list-style-type: none;
+}
+.track-title {
+    width: 235px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.track-title:hover {
+    white-space: normal;
+    overflow: visible;
 }
 
 .filter-options {
@@ -28,5 +38,4 @@ li {
 .react-player {
     position: absolute;
     top: 0;
-    left: -60px;
 }

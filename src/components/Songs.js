@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import "../stylesheets/Songs.css";
 import Track from "./Track"
 import { FilterContext } from './filter-context';
+import DefaultAlbum from '../data/record_placeholder-f3f829566497dc26b0abfae50ddeb5c7bc48fe1c58dc1c7fe62a26d64988b9c9.svg';
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
@@ -72,14 +73,43 @@ const Songs = ({ song }) => {
         <Track track={track} />)
     });
 
+  let name = [];
+
+  if(artistName.includes("(")) {
+    artistName.split("(").map((token, index) => {
+      if(index > 0)
+        return(
+          name.push(<h5 className="header-artist">{"("}{token}</h5>)
+        )
+      else
+        name.push(<h5 className="header-artist">{token}</h5>)
+    });
+
+  } else {
+    name.push(<h5 className="header-artist">{artistName}</h5>);
+  }
+
+
   if(rows.length > 0) {
     return (
-      <React.Fragment>
-        <h5 className="header-artist">{artistName}</h5>
-        <ul>
-          {rows}
-        </ul>
-      </React.Fragment>
+      <div className="song-item">
+        <div className="artist-name">
+          <h5>{artistName}</h5>
+        </div>
+        <div className="card-content">
+          <div className="album-art">
+            <img src={DefaultAlbum} alt={"Default Album"} width="150" height="150"/>
+          </div>
+          <div className="track-list">
+            <ul>
+              {rows}
+            </ul>
+          </div>
+        </div>
+        <div className="tags">
+          Korean • Female Vocalist • Girl Group
+        </div>
+      </div>
     )}
 
   return null;

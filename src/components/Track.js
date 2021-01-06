@@ -88,13 +88,14 @@ const Track = ({ track }) => {
   return (
     <React.Fragment>
       <li>
-        <p onClick={() => setVideoShowing(!videoShowing)}>
-          {track.name}{' '}
-          {button}
-        </p>
+        <div className="track-title">
+          {track.name}
+        </div>
         <div className="filter-options">
-          {genres}
-          {tags}
+          <span onClick={() => setVideoShowing(!videoShowing)}>
+            {button}
+          </span>
+            {' '} | {' '} {genres}
         </div>
         { videoShowing
           ? <div className='player-wrapper'>

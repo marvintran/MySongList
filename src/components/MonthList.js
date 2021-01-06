@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../stylesheets/MonthList.css";
 import Songs from './Songs'
 import Collapse from 'react-bootstrap/Collapse';
 import LazyLoad from 'react-lazyload';
@@ -20,7 +21,7 @@ const MonthList = ({ month, songs, id, action }) => {
         <div>
           <h2 id={id} onClick={() => setMonthShowing(!monthShowing)}>{month}</h2>
           <Collapse in={monthShowing}>
-            <div>
+            <div className="month-item">
               {songList}
             </div>
           </Collapse>
