@@ -1,5 +1,5 @@
 body {
-    background-color: #eaeaea;
+    background-color: #eeeeee;
 }
 
 h1 {
@@ -11,7 +11,7 @@ h1 {
 }
 
 .nav-wrapper {
-    background-color: #eaeaea;
+    background-color: #e3e3e3;
     padding-left: 0px;
     padding-right: 0px;
     max-width: 176px;
@@ -20,7 +20,7 @@ h1 {
 }
 
 .nav-bar {
-    background-color: #eaeaea;
+    background-color: #e3e3e3;
     height: 100vh;
     display: block;
     overflow-y: auto;
@@ -37,14 +37,14 @@ h1 {
 }
 
 .filters-wrapper {
-    background-color: #eaeaea;
+    background-color: #e3e3e3;
     padding-left: 0px;
     padding-right: 0px;
     border-left: 1px solid #d2d6d6
 }
 
 .filters {
-    background-color: #eaeaea;
+    background-color: #e3e3e3;
     height: 100vh;
     padding: 16px;
     position: fixed;
