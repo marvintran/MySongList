@@ -1,19 +1,28 @@
 .song-item-no-video {
-    background-color: #f9f9f9;
+    background-color: #f7f7f7;
     display: block;
     width: 400px;
     border-radius: 10px;
     padding: 5px;
     margin: 15px 15px 15px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.song-item-no-video:hover {
+    background-color: #ffffff;
+}
+.song-item-video-showing:hover {
+    background-color: #ffffff;
 }
 
 .song-item-video-showing{
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     display: block;
     width: 815px;
     border-radius: 10px;
     padding: 5px;
     margin: 15px 15px 15px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .artist-name {
