@@ -15,9 +15,11 @@ import Collapse from 'react-bootstrap/Collapse';
 import january2020 from './data/2020_01_january.json';
 import february2020 from './data/2020_02_february.json';
 import march2020 from './data/2020_03_march.json';
+import april2020 from './data/2020_04_april.json';
 import {Waypoint} from "react-waypoint";
 
 const App = () => {
+  const [toggleYear2021, setYear2021] = useState(true);
   const [toggleYear2020, setYear2020] = useState(true);
   const [toggleYear2019, setYear2019] = useState(true);
   const [toggleYear2018, setYear2018] = useState(true);
@@ -34,7 +36,9 @@ const App = () => {
         <Row>
           <Col className="nav-wrapper">
             <div className="nav-bar">
+              <NavLink title={"2021"} currMarker={currMarker}/>
               <NavLink title={"2020"} currMarker={currMarker}/>
+              <NavLink title={"April 2020"} currMarker={currMarker} className={"month"}/>
               <NavLink title={"March 2020"} currMarker={currMarker} className={"month"}/>
               <NavLink title={"February 2020"} currMarker={currMarker} className={"month"}/>
               <NavLink title={"January 2020"} currMarker={currMarker} className={"month"}/>
@@ -48,6 +52,26 @@ const App = () => {
             </div>
           </Col>
           <Col className="content">
+
+            <Waypoint onEnter={() => {setMarker("2021")}} bottomOffset={bottomOffSet}>
+              <div className="header-year">
+                <h1 id="2021" >
+                  2021
+                </h1>
+                <p onClick={() => setYear2021(!toggleYear2021)} className="minimize">
+                  { toggleYear2021
+                    ? "Hide"
+                    : "Show"
+                  }
+                </p>
+              </div>
+            </Waypoint>
+
+            <Collapse in={toggleYear2021}>
+              <div>
+              </div>
+            </Collapse>
+
             <Waypoint onEnter={() => {setMarker("2020")}} bottomOffset={bottomOffSet}>
               <div className="header-year">
                 <h1 id="2020" >
@@ -64,6 +88,12 @@ const App = () => {
 
             <Collapse in={toggleYear2020}>
               <div>
+                <MonthList
+                  id={"april2020"}
+                  month={"April 2020"}
+                  songs={april2020.songs}
+                  action={setMarker}
+                />
                 <MonthList
                   id={"march2020"}
                   month={"March 2020"}

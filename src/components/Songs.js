@@ -2,9 +2,10 @@ import React, {useContext, useState} from 'react';
 import "../stylesheets/Songs.css";
 import Track from "./Track"
 import { FilterContext } from './filter-context';
-import DefaultAlbum
-  from '../data/record_placeholder-f3f829566497dc26b0abfae50ddeb5c7bc48fe1c58dc1c7fe62a26d64988b9c9.svg';
+import DefaultCoverArt
+  from '../data/Default_Cover_Art.svg';
 import Badge from "react-bootstrap/Badge";
+import { Img } from "react-image";
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
@@ -57,24 +58,9 @@ function hasFilters(track, song, filterOptions) {
   return hasGenre && hasTag;
 }
 
-function isActive(index, value, filters) {
-  let isActive = false;
-  if(filters[index].length !== 0) {
-    for(let i = 0; i < filters[index].length; i++) {
-      let filterValue = camelCaseToNormal(filters[index][i]);
-      if(filterValue === value) {
-        isActive = true;
-        break;
-      }
-    }
-  }
-  return isActive;
-}
-
 const Songs = ({ song }) => {
   const filters = useContext(FilterContext);
   const [videoCount, setVideoCount] = useState(0);
-
   const artistName = song.artist.join(", ");
 
   const rows = song.tracks
@@ -104,6 +90,13 @@ const Songs = ({ song }) => {
     css = "song-item-no-video"
   }
 
+  let coverArt;
+  if(song.art){
+    coverArt = <img src={song.art} alt={"Cover Art"} width="150" height="150"/>
+  } else {
+    coverArt = <img src={DefaultCoverArt} alt={"Cover Art"} width="150" height="150"/>
+  }
+
   if(rows.length > 0) {
     return (
       <div className={css}>
@@ -112,7 +105,7 @@ const Songs = ({ song }) => {
         </div>
         <div className="card-content">
           <div className="album-art">
-            <img src={DefaultAlbum} alt={"Default Album"} width="150" height="150"/>
+            {coverArt}
           </div>
           <div className="track-list">
             <ul>

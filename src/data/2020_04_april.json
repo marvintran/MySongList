@@ -1,0 +1,412 @@
+{
+  "songs": [
+    {
+      "artist": ["Kwon Jin Ah (권진아)"],
+      "tracks": [
+        {
+          "name": "Something's Wrong (뭔가 잘못됐어)",
+          "url": "https://www.youtube.com/watch?v=0kx2KBD34CM)",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203159/20315957.jpg"
+    },
+    {
+      "artist": ["Ben (벤)"],
+      "tracks": [
+        {
+          "name": "Bad (나쁜 놈)",
+          "url": "https://www.youtube.com/watch?v=cgpQREKKpQI",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "In Your Eyes (눈이 말하더라)",
+          "url": "https://www.youtube.com/watch?v=XqUgXN8q_BI",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "I'll Give My All To You",
+          "url": "https://www.youtube.com/watch?v=apGEzDQDcvc",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203213/20321304.jpg"
+    },
+    {
+      "artist": ["Han Dong Geun (한동근)"],
+      "tracks": [
+        {
+          "name": "Usual (보통 같으면)",
+          "url": "https://www.youtube.com/watch?v=U016c4mFebQ",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203198/20319850.jpg"
+    },
+    {
+      "artist": ["Seon Myeong (선명 (先命))"],
+      "tracks": [
+        {
+          "name": "위안",
+          "url": "https://www.youtube.com/watch?v=qe272WiZrLM",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "GO",
+          "url": "https://www.youtube.com/watch?v=dMNBQnW7Ztc",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Somehow In My Mind (어느샌가 내 마음에)",
+          "url": "https://www.youtube.com/watch?v=jd0umKC9UuY",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Midnight Travel (한밤의 여행) (Remastered)",
+          "url": "https://www.youtube.com/watch?v=mghjUVdacxE)",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203157/20315756.jpg"
+    },
+    {
+      "artist": ["Lim Heon Il (임헌일)"],
+      "tracks": [
+        {
+          "name": "Leave Home (집을 나섰어)",
+          "url": "https://www.youtube.com/watch?v=oRGwD2nNwT8",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Does It Mean Anything (의미가 있나요)",
+          "url": "https://www.youtube.com/watch?v=IHLSlxAiZfI",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Crying (feat. Henry) (운다 (feat. 헨리))",
+          "url": "https://www.youtube.com/watch?v=Y2O5XN5BS1A",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Breath (호흡)",
+          "url": "https://www.youtube.com/watch?v=recdqrVXE5c",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203193/20319356.jpg"
+    },
+    {
+      "artist": ["J.UNA (제이유나)"],
+      "tracks": [
+        {
+          "name": "Just Want To Sleep (망할 잠)",
+          "url": "https://www.youtube.com/watch?v=bMBoqGK_lnI",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "YOU",
+          "url": "https://www.youtube.com/watch?v=43BfDeKfuY4",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Unbeautiful",
+          "url": "https://www.youtube.com/watch?v=EyeX7NYb4H8",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Can I Love Again",
+          "url": "https://www.youtube.com/watch?v=JcczvrV1HAs",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203205/20320581.jpg"
+    },
+    {
+      "artist": ["KYUHYUN (규현)"],
+      "tracks": [
+        {
+          "name": "Confession Is Not Flashy (화려하지 않은 고백)",
+          "url": "https://www.youtube.com/watch?v=ftQF5AbDMLM",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203161/20316159.jpg"
+    },
+    {
+      "artist": ["Sin Ye Young (신예영)"],
+      "tracks": [
+        {
+          "name": "I Think You’re Not Missing Me (넌 내가 보고 싶지 않나 봐)",
+          "url": "https://www.youtube.com/watch?v=WlVWlLWOgyY",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203215/20321541.jpg"
+    },
+    {
+      "artist": ["Han Seung Woo (한승우)"],
+      "tracks": [
+        {
+          "name": "If We Can't See From Tomorrow (내일부터 우리가 못본다면)",
+          "url": "https://www.youtube.com/watch?v=4big6WCrNK0",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203163/20316373.jpg"
+    },
+    {
+      "artist": ["Paul Kim (폴킴)"],
+      "tracks": [
+        {
+          "name": "But I'll Miss You (우리 만남이)",
+          "url": "https://www.youtube.com/watch?v=OOS7mvspJAA",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "HOLIDAY",
+          "url": "https://www.youtube.com/watch?v=0EOTy33cDfI",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "The Reason for My Spring (나의 봄의 이유)",
+          "url": "https://www.youtube.com/watch?v=eGzlWuCdOsQ",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203205/20320521.jpg"
+    },
+    {
+      "artist": ["Jin Minho (진민호)"],
+      "tracks": [
+        {
+          "name": "How About You (어때)",
+          "url": "https://www.youtube.com/watch?v=Csq6-qxMuW4",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203194/20319426.jpg"
+    },
+    {
+      "artist": ["Ha Dong Kyun (하동균)"],
+      "tracks": [
+        {
+          "name": "Just Leave Me (그냥 나를 버려요)",
+          "url": "https://www.youtube.com/watch?v=rb-0xJHHALw",
+          "genre": ["Ballad"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203193/20319398.jpg"
+    },
+    {
+      "artist": ["GWSN (공원소녀)"],
+      "tracks": [
+        {
+          "name": "BAZOOKA!",
+          "url": "https://www.youtube.com/watch?v=wMj3sLP_azg",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "공중곡예사 (Wonderboy, the Aerialist)",
+          "url": "https://www.youtube.com/watch?v=ZMjxc3x-OBE",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "Tweaks ~ Heavy cloud but no rain",
+          "url": "https://www.youtube.com/watch?v=CKfdP7S8fEA",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "After the bloom (alone)",
+          "url": "https://www.youtube.com/watch?v=5K-zlfn41M4",
+          "genre": ["Pop"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "https://image.bugsm.co.kr/album/images/original/141230/14123011.jpg"
+    },
+    {
+      "artist": ["APRIL (에이프릴)"],
+      "tracks": [
+        {
+          "name": "1,2,3,4",
+          "url": "https://www.youtube.com/watch?v=Yr-yTFYTo20",
+          "genre": ["Pop"]
+        },
+        {
+          "name": "Oops I'm Sorry",
+          "url": "https://www.youtube.com/watch?v=aTKu0croThs",
+          "genre": ["Pop"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203205/20320572.jpg"
+    },
+    {
+      "artist": ["Apink (에이핑크)"],
+      "tracks": [
+        {
+          "name": "Everybody Ready?",
+          "url": "https://www.youtube.com/watch?v=CRJPWph0xhM",
+          "genre": ["Pop"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203183/20318375.jpg"
+    },
+    {
+      "artist": ["Stella Jang (스텔라장)"],
+      "tracks": [
+        {
+          "name": "Villain (빌런)",
+          "url": "https://www.youtube.com/watch?v=R-kWrXyIe4k",
+          "genre": ["Indie"]
+        },
+        {
+          "name": "Forever",
+          "url": "https://www.youtube.com/watch?v=Nt8Ec7sS6Oc",
+          "genre": ["Indie"]
+        },
+        {
+          "name": "Bourgeois Emotion",
+          "url": "https://www.youtube.com/watch?v=teusslpRevo",
+          "genre": ["Indie"]
+        },
+        {
+          "name": "Good Job",
+          "url": "https://www.youtube.com/watch?v=aRM2cz_ZgEM",
+          "genre": ["Indie"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203171/20317156.jpg"
+    },
+    {
+      "artist": ["Stella Jang (스텔라장)"],
+      "tracks": [
+        {
+          "name": "톡톡",
+          "url": "https://www.youtube.com/watch?v=VIW86U26oPk",
+          "genre": ["Indie"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203213/20321370.jpg"
+    },
+    {
+      "artist": ["DICKPUNKS (딕펑스)"],
+      "tracks": [
+        {
+          "name": "Parallel Lines (평행선) (feat. Juk Jae (적재))",
+          "url": "https://www.youtube.com/watch?v=LfV7tXutVR4",
+          "genre": ["Rock"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203188/20318874.jpg"
+    },
+    {
+      "artist": ["SORAN"],
+      "tracks": [
+        {
+          "name": "봄이 좋냐??",
+          "url": "https://www.youtube.com/watch?v=gmfKxVmr1YQ",
+          "genre": ["Indie"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203194/20319451.jpg"
+    },
+    {
+      "artist": ["Wine Loop (와인루프)"],
+      "tracks": [
+        {
+          "name": "고쳐 쓰는 거 아냐",
+          "url": "https://www.youtube.com/watch?v=Z8dTsm5Ka64",
+          "genre": ["Indie"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/9778/977861.jpg"
+    },
+    {
+      "artist": ["MAX CHANGMIN (최강창민)"],
+      "tracks": [
+        {
+          "name": "High Heels",
+          "url": "https://www.youtube.com/watch?v=vfVZOm0OmRE",
+          "genre": ["Pop", "Dance"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203168/20316832.jpg"
+    },
+    {
+      "artist": ["So Soo Bin (소수빈)"],
+      "tracks": [
+        {
+          "name": "나도 날 잘 (umm)",
+          "url": "https://www.youtube.com/watch?v=kOBqAJ0YnaE",
+          "genre": ["Indie"]
+        }
+      ],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203161/20316166.jpg"
+    },
+    {
+      "artist": ["Choi Ye Geun (최예근)"],
+      "tracks": [
+        {
+          "name": "Mama Said (탓)",
+          "url": "https://www.youtube.com/watch?v=dseUXbt91I8",
+          "genre": ["Indie"]
+        },
+        {
+          "name": "SuperMoon",
+          "url": "https://www.youtube.com/watch?v=9XYmyOi1jaw",
+          "genre": ["Indie"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203204/20320421.jpg"
+    },
+    {
+      "artist": ["JuanKim Trio & Friends (김트와친구들)"],
+      "tracks": [
+        {
+          "name": "RECOVER",
+          "url": "https://www.youtube.com/watch?v=E43ut_-uQnI",
+          "genre": ["Indie"]
+        },
+        {
+          "name": "COWARD (Remastered)",
+          "url": "https://www.youtube.com/watch?v=9rCr5yUujME",
+          "genre": ["Indie"]
+        },
+        {
+          "name": "RECOVER live",
+          "url": "https://www.youtube.com/watch?v=XJF5GaZ_GBU",
+          "genre": ["Indie"]
+        },
+        {
+          "name": "COWARD (Remastered) live",
+          "url": "https://www.youtube.com/watch?v=zV8HByBA3_8",
+          "genre": ["Indie"]
+        }
+      ],
+      "tags": ["Korean", "Female Vocalist", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/9776/977613.jpg"
+    }
+  ]
+}

@@ -9,7 +9,8 @@
           "genre": ["Ballad", "Indie", "Acoustic"]
         }
       ],
-      "tags": ["Korean", "Female Vocalist"]
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203171/20317156.jpg"
     },
     {
       "artist": ["Park So Eun (박소은)"],
@@ -30,7 +31,8 @@
           "genre": ["Ballad", "Indie", "Rock"]
         }
       ],
-      "tags": ["Korean", "Female Vocalist"]
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203142/20314243.jpg"
     },
     {
       "artist": ["Sejeong (세정)"],
@@ -56,7 +58,8 @@
           "genre": ["Ballad", "Acoustic"]
         }
       ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203127/20312712.jpg"
     },
     {
       "artist": ["Kwon Jin Ah (권진아)"],
@@ -67,7 +70,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Korean", "Female Vocalist"]
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203122/20312201.jpg"
     },
     {
       "artist": ["Kwon Jin Ah (권진아)"],
@@ -78,7 +82,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Korean", "Female Vocalist", "OST"]
+      "tags": ["Korean", "Female Vocalist", "OST"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203114/20311460.jpg"
     },
     {
       "artist": ["Jukjae (적재)"],
@@ -89,7 +94,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Korean", "Male Vocalist", "OST"]
+      "tags": ["Korean", "Male Vocalist", "OST"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203151/20315189.jpg"
     },
     {
       "artist": ["Kwon Soonkwan (권순관)"],
@@ -116,7 +122,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Korean", "Male Vocalist"]
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203107/20310745.jpg"
     },
     {
       "artist": ["ITZY"],
@@ -142,7 +149,8 @@
           "genre": ["Pop"]
         }
       ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203110/20311029.jpg"
     },
     {
       "artist": ["Yoo Hyung Kyun (유형균)"],
@@ -158,7 +166,8 @@
           "genre": ["Ballad", "Indie", "Acoustic"]
         }
       ],
-      "tags": ["Korean", "Male Vocalist"]
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203118/20311822.jpg"
     },
     {
       "artist": ["Park Ji Yoon (박지윤)"],
@@ -169,7 +178,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Korean", "Female Vocalist"]
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/9728/972896.jpg"
     },
     {
       "artist": ["Han Dong Geun (한동근)"],
@@ -180,7 +190,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Korean", "Male Vocalist"]
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203106/20310676.jpg"
     },
     {
       "artist": ["Jung Seung Hwan (정승환)"],
@@ -191,7 +202,8 @@
           "genre": ["Ballad", "OST"]
         }
       ],
-      "tags": ["Korean", "Male Vocalist"]
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203120/20312088.jpg"
     },
     {
       "artist": ["Fil (필)"],
@@ -202,7 +214,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Korean", "Male Vocalist"]
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203122/20312232.jpg"
     },
     {
       "artist": ["SUHO (수호)"],
@@ -218,7 +231,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Korean", "Male Vocalist"]
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203153/20315361.jpg?"
     },
     {
       "artist": ["Norah Jones"],
@@ -229,7 +243,8 @@
           "genre": ["R&B", "Soul", "Ballad"]
         }
       ],
-      "tags": ["English", "Female Vocalist"]
+      "tags": ["English", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/139759/13975992.jpg"
     },
     {
       "artist": ["Circa Waves"],
@@ -245,7 +260,8 @@
           "genre": ["Pop"]
         }
       ],
-      "tags": ["English", "Female Vocalist"]
+      "tags": ["English", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203000/20300004.jpg"
     },
     {
       "artist": ["Fujita Maiko (藤田麻衣子)"],
@@ -261,7 +277,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Japanese", "Female Vocalist"]
+      "tags": ["Japanese", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/9706/970603.jpg"
     },
     {
       "artist": ["Ikimonogakari (いきものがかり)"],
@@ -272,7 +289,8 @@
           "genre": ["Ballad"]
         }
       ],
-      "tags": ["Japanese", "Female Vocalist"]
+      "tags": ["Japanese", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/original/203171/20317156.jpg"
     }
   ]
 }
