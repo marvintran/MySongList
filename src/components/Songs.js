@@ -5,7 +5,6 @@ import { FilterContext } from './filter-context';
 import DefaultCoverArt
   from '../data/Default_Cover_Art.svg';
 import Badge from "react-bootstrap/Badge";
-import { Img } from "react-image";
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
