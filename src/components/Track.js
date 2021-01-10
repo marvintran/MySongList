@@ -31,7 +31,6 @@ function isActive(index, value, filters) {
 }
 
 const Track = ({ track, videoCount, setVideoCount}) => {
-  const filters = useContext(FilterContext);
   const [videoShowing, setVideoShowing] = useState(false);
 
   if(track.url === "") {

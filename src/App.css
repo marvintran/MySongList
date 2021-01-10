@@ -1,6 +1,7 @@
 body {
-    background-color: #f7f7f7;
+    background-color: #eaeaea;
 }
+
 h1 {
     display: inline-block;
 }
@@ -10,16 +11,16 @@ h1 {
 }
 
 .nav-wrapper {
-    background-color: #f7f7f7;
+    background-color: #eaeaea;
     padding-left: 0px;
     padding-right: 0px;
     max-width: 176px;
     padding-top: 8px;
-    border-right: 1px solid #ececec
+    border-right: 1px solid #d2d6d6
 }
 
 .nav-bar {
-    background-color: #f7f7f7;
+    background-color: #eaeaea;
     height: 100vh;
     display: block;
     overflow-y: auto;
@@ -36,14 +37,14 @@ h1 {
 }
 
 .filters-wrapper {
-    background-color: #f7f7f7;
+    background-color: #eaeaea;
     padding-left: 0px;
     padding-right: 0px;
-    border-left: 1px solid #ececec
+    border-left: 1px solid #d2d6d6
 }
 
 .filters {
-    background-color: #f7f7f7;
+    background-color: #eaeaea;
     height: 100vh;
     padding: 16px;
     position: fixed;

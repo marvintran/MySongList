@@ -6,6 +6,7 @@ p {
 li {
     list-style-type: none;
 }
+
 .track-title-ellipsis {
     width: 235px;
     white-space: nowrap;

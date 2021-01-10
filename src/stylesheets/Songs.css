@@ -1,5 +1,5 @@
 .song-item-no-video {
-    background-color: white;
+    background-color: #f9f9f9;
     display: block;
     width: 400px;
     border-radius: 10px;
@@ -8,7 +8,7 @@
 }
 
 .song-item-video-showing{
-    background-color: white;
+    background-color: #f9f9f9;
     display: block;
     width: 815px;
     border-radius: 10px;

@@ -4,7 +4,6 @@ import Track from "./Track"
 import { FilterContext } from './filter-context';
 import DefaultAlbum
   from '../data/record_placeholder-f3f829566497dc26b0abfae50ddeb5c7bc48fe1c58dc1c7fe62a26d64988b9c9.svg';
-import FilterButton from "./FilterButton";
 import Badge from "react-bootstrap/Badge";
 
 // https://stackoverflow.com/a/7225450
