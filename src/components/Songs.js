@@ -2,14 +2,16 @@ import React, {useContext, useState} from 'react';
 import "../stylesheets/Songs.css";
 import Track from "./Track"
 import { FilterContext } from './filter-context';
-import DefaultCoverArt
-  from '../data/Default_Cover_Art.svg';
+import DefaultCoverArt from '../data/Default_Cover_Art.svg';
 import Badge from "react-bootstrap/Badge";
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
   if(value === "ost")
     return "OST";
+  else if(value === "rnb")
+    return "R&B";
+
   let result = value.replace( /([A-Z])/g, " $1" );
   return result.charAt(0).toUpperCase() + result.slice(1);
 }

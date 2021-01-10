@@ -12,6 +12,7 @@ li {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-bottom: 2px;
 }
 
 .track-title-longer {
@@ -20,7 +21,6 @@ li {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 
 .track-title-ellipsis:hover {
     white-space: normal;

@@ -2,18 +2,20 @@
   "songs": [
     {
       "artist": ["Stella Jang (스텔라장)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203171/20317156.jpg",
       "tracks": [
         {
           "name": "Reality Blue",
           "url": "https://www.youtube.com/watch?v=3b6UvRIsXvQ",
           "genre": ["Ballad", "Indie", "Acoustic"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203171/20317156.jpg"
+      ]
     },
     {
       "artist": ["Park So Eun (박소은)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203142/20314243.jpg",
       "tracks": [
         {
           "name": "Gogangdong (고강동)",
@@ -30,12 +32,12 @@
           "url": "https://www.youtube.com/watch?v=7sMMnONimdw",
           "genre": ["Ballad", "Indie", "Rock"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203142/20314243.jpg"
+      ]
     },
     {
       "artist": ["Sejeong (세정)"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203127/20312712.jpg",
       "tracks": [
         {
           "name": "Hopes For Tomorrow (오늘은 괜찮아)",
@@ -57,48 +59,48 @@
           "url": "https://www.youtube.com/watch?v=h0kOHb_BNAk",
           "genre": ["Ballad", "Acoustic"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203127/20312712.jpg"
+      ]
     },
     {
       "artist": ["Kwon Jin Ah (권진아)"],
+      "tags": ["Korean", "Female Vocalist", "Live"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203122/20312201.jpg",
       "tracks": [
         {
           "name": "Lover (연인)",
           "url": "https://www.youtube.com/watch?v=uJWxbvuhvBQ",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203122/20312201.jpg"
+      ]
     },
     {
       "artist": ["Kwon Jin Ah (권진아)"],
+      "tags": ["Korean", "Female Vocalist", "OST"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203114/20311460.jpg",
       "tracks": [
         {
           "name": "Lonely Night",
           "url": "https://www.youtube.com/watch?v=3JJEAHst96w",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "OST"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203114/20311460.jpg"
+      ]
     },
     {
       "artist": ["Jukjae (적재)"],
+      "tags": ["Korean", "Male Vocalist", "OST"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203151/20315189.jpg",
       "tracks": [
         {
           "name": "Wish (바람)",
           "url": "https://www.youtube.com/watch?v=3SGS745SlOQ",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist", "OST"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203151/20315189.jpg"
+      ]
     },
     {
       "artist": ["Kwon Soonkwan (권순관)"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203107/20310745.jpg",
       "tracks": [
         {
           "name": "이사",
@@ -121,12 +123,12 @@
           "url": "https://www.youtube.com/watch?v=MLzek9zcz1o",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203107/20310745.jpg"
+      ]
     },
     {
       "artist": ["ITZY"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203110/20311029.jpg",
       "tracks": [
         {
           "name": "WANNABE",
@@ -148,12 +150,12 @@
           "url": "https://www.youtube.com/watch?v=CWIGtBHy4eU",
           "genre": ["Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203110/20311029.jpg"
+      ]
     },
     {
       "artist": ["Yoo Hyung Kyun (유형균)"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203118/20311822.jpg",
       "tracks": [
         {
           "name": "STARDUST",
@@ -165,60 +167,60 @@
           "url": "https://www.youtube.com/watch?v=uRChrfnaWjg",
           "genre": ["Ballad", "Indie", "Acoustic"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203118/20311822.jpg"
+      ]
     },
     {
       "artist": ["Park Ji Yoon (박지윤)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/9728/972896.jpg",
       "tracks": [
         {
           "name": "Flower (그날의 봄)",
           "url": "https://www.youtube.com/watch?v=8L0fzaaYQ7U",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/9728/972896.jpg"
+      ]
     },
     {
       "artist": ["Han Dong Geun (한동근)"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203106/20310676.jpg",
       "tracks": [
         {
           "name": "Candle (초)",
           "url": "https://www.youtube.com/watch?v=7ZWgzNcq1kc",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203106/20310676.jpg"
+      ]
     },
     {
       "artist": ["Jung Seung Hwan (정승환)"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203120/20312088.jpg",
       "tracks": [
         {
           "name": "I Am You (나는 너야)",
           "url": "https://www.youtube.com/watch?v=AU3l1MJ1uUI",
           "genre": ["Ballad", "OST"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203120/20312088.jpg"
+      ]
     },
     {
       "artist": ["Fil (필)"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203122/20312232.jpg",
       "tracks": [
         {
           "name": "Like Nothing (아무일 없던 것처럼)",
           "url": "https://www.youtube.com/watch?v=5aKqWhynUhY",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203122/20312232.jpg"
+      ]
     },
     {
       "artist": ["SUHO (수호)"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203153/20315361.jpg",
       "tracks": [
         {
           "name": "For You Now (Feat. Younha) (너의 차례 Feat. 윤하)",
@@ -230,24 +232,24 @@
           "url": "https://www.youtube.com/watch?v=Bm0WreZrKQs",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203153/20315361.jpg?"
+      ]
     },
     {
       "artist": ["Norah Jones"],
+      "tags": ["English", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/139759/13975992.jpg",
       "tracks": [
         {
           "name": "I'm Alive",
           "url": "https://www.youtube.com/watch?v=Hjv2mxOiej4",
           "genre": ["R&B", "Soul", "Ballad"]
         }
-      ],
-      "tags": ["English", "Female Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/139759/13975992.jpg"
+      ]
     },
     {
       "artist": ["Circa Waves"],
+      "tags": ["English", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/203000/20300004.jpg",
       "tracks": [
         {
           "name": "Jacqueline",
@@ -259,12 +261,12 @@
           "url": "https://www.youtube.com/watch?v=mp8_fh7gUtY",
           "genre": ["Pop"]
         }
-      ],
-      "tags": ["English", "Female Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203000/20300004.jpg"
+      ]
     },
     {
       "artist": ["Fujita Maiko (藤田麻衣子)"],
+      "tags": ["Japanese", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/9706/970603.jpg",
       "tracks": [
         {
           "name": "chapter",
@@ -276,21 +278,19 @@
           "url": "https://www.youtube.com/watch?v=NTJdo7glCME",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Japanese", "Female Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/9706/970603.jpg"
+      ]
     },
     {
       "artist": ["Ikimonogakari (いきものがかり)"],
+      "tags": ["Japanese", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Ikiru (生きる)",
           "url": "https://www.youtube.com/watch?v=BahbNpj340k",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Japanese", "Female Vocalist"],
-      "art": "https://image.bugsm.co.kr/album/images/original/203171/20317156.jpg"
+      ]
     }
   ]
 }

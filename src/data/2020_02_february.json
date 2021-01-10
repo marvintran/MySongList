@@ -2,22 +2,25 @@
   "songs": [
     {
       "artist": ["Rocket Punch (로켓펀치)"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "",
       "tracks": [
         {
           "name": "So Solo",
           "url": "https://www.youtube.com/watch?v=FOxRrVGHADo",
           "genre": ["Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      ]
     },
     {
       "artist": ["ELRIS (엘리스)"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "",
       "tracks": [
         {
           "name": "해봐 (Like I do)",
           "url": "https://www.youtube.com/watch?v=3ucGattvbdA",
-          "genre": ["Rock", "Indie"]
+          "genre": ["Pop"]
         },
         {
           "name": "No Big Deal",
@@ -29,11 +32,12 @@
           "url": "https://www.youtube.com/watch?v=iPAIlZM1VUU",
           "genre": ["Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      ]
     },
     {
       "artist": ["LOONA (이달의 소녀)"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "",
       "tracks": [
         {
           "name": "땡땡땡",
@@ -45,11 +49,12 @@
           "url": "https://www.youtube.com/watch?v=GEo5bmUKFvI",
           "genre": ["Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      ]
     },
     {
       "artist": ["GFRIEND (여자친구)"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "",
       "tracks": [
         {
           "name": "교차로 (Crossroads)",
@@ -66,44 +71,48 @@
           "url": "https://www.youtube.com/watch?v=Di8CNLpJiLc",
           "genre": ["Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      ]
     },
     {
       "artist": ["Cherry Bullet (체리블렛)"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "",
       "tracks": [
         {
           "name": "Hands Up (무릎을 탁 치고)",
           "url": "https://www.youtube.com/watch?v=0It6vWbGOX0",
           "genre": ["Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      ]
     },
     {
       "artist": ["Weki Meki (위키미키)"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "",
       "tracks": [
         {
           "name": "DAZZLE DAZZLE",
           "url": "https://www.youtube.com/watch?v=RTeOt6n90vM",
           "genre": ["Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      ]
     },
     {
       "artist": ["DKSN (동경소녀)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Look At Me (봐봐봐)",
           "url": "https://www.youtube.com/watch?v=PqnbXOy7WwE",
           "genre": ["Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["CHABITNA (차빛나)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "나는 푸른색이 좋아",
@@ -120,11 +129,12 @@
           "url": "https://www.youtube.com/watch?v=3Siif8vPLCE",
           "genre": ["Ballad", "Folk"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["Son Hyeeun (손혜은)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Winter Rain (겨울비)",
@@ -136,66 +146,72 @@
           "url": "https://www.youtube.com/watch?v=XtfkF_jEwmQ",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["Park Won (박원)"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "My turn (내 차례)",
           "url": "https://www.youtube.com/watch?v=tpzFcing2I8",
           "genre": ["Ballad", "OST"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"]
+      ]
     },
     {
       "artist": ["Kim Yeon Ji (김연지)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "When The Wind Blows (바람이 불면)",
           "url": "https://www.youtube.com/watch?v=VpAGvATwxD4",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"]
+      ]
     },
     {
       "artist": ["LUNA (루나)"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "",
       "tracks": [
         {
           "name": "It Hurts and Hurts (아프고 아파도) (X-MAS Project Vol.2)",
           "url": "https://www.youtube.com/watch?v=c9iBK8A-llw",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      ]
     },
     {
       "artist": ["Seo Ja Yeong (서자영)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Til You Can't Reach (닿을 수 없게)",
           "url": "https://www.youtube.com/watch?v=7pqzFto7r0E",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["Sejeong (세정)"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "",
       "tracks": [
         {
           "name": "All of My Days (나의 모든 날)",
           "url": "https://www.youtube.com/watch?v=bFLMKECxUMY",
           "genre": ["Ballad", "OST"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      ]
     },
     {
       "artist": ["by me"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Like Nothing (아무 일 없던 것처럼)",
@@ -212,44 +228,48 @@
           "url": "https://www.youtube.com/watch?v=LA_LvLs8zhY",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"]
+      ]
     },
     {
       "artist": ["SE O (세오)"],
+      "tags": ["Korean", "Female Vocalist", "OST"],
+      "art": "",
       "tracks": [
         {
           "name": "Lean On Me",
           "url": "https://www.youtube.com/watch?v=-yVjFUIsxrU",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "OST"]
+      ]
     },
     {
       "artist": ["Kevin Oh (케빈오)"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Anytime, Anywhere",
           "url": "https://www.youtube.com/watch?v=PLhTOhto30c",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"]
+      ]
     },
     {
       "artist": ["Standing Egg (스탠딩 에그)"],
+      "tags": ["Korean", "Female Vocalist", "Male Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "I'm Dawn (with 새벽)",
           "url": "https://www.youtube.com/watch?v=CsMMa7CZ4oA",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Male Vocalist"]
+      ]
     },
     {
       "artist": ["615"],
+      "tags": ["Korean", "Male Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "콩깍지",
@@ -271,99 +291,108 @@
           "url": "https://www.youtube.com/watch?v=46MiCcWIZxc",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist"]
+      ]
     },
     {
       "artist": ["Rothy (로시)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "HELLO",
           "url": "https://www.youtube.com/watch?v=j5_btrd-1x4",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["Im Subeen (임수빈)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "그때의 우리를 너무 미워하지 말고",
           "url": "https://www.youtube.com/watch?v=6Kcpp1jdNiI",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["BANHANA (반하나)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Because of You (그 남잔 말야)",
           "url": "https://www.youtube.com/watch?v=avwbUOtWgWA",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["Choi Ye Geun (최예근)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Dear. My Winter (나의 겨울에게)",
           "url": "https://www.youtube.com/watch?v=fhH32K6Kv8U",
           "genre": ["Ballad"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["BAEKHYUN (백현)"],
+      "tags": ["Korean", "Male Vocalist", "Boy Group"],
+      "art": "",
       "tracks": [
         {
           "name": "On The Road (너에게 가는 이 길 위에서 (너.이.길))",
           "url": "https://www.youtube.com/watch?v=xZpaBkZqumo",
           "genre": ["Ballad", "OST"]
         }
-      ],
-      "tags": ["Korean", "Male Vocalist", "Boy Group"]
+      ]
     },
     {
       "artist": ["CHUNG HA 청하"],
+      "tags": ["Korean", "Female Vocalist", "Girl Group"],
+      "art": "",
       "tracks": [
         {
           "name": "My Love (나의 그대)",
           "url": "https://www.youtube.com/watch?v=P2iSg_5k2Y8",
           "genre": ["Ballad", "OST"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist", "Girl Group"]
+      ]
     },
     {
       "artist": ["Sondia "],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Our Souls at Night (우리의 밤)",
           "url": "https://www.youtube.com/watch?v=1S34b4IfNSo",
           "genre": ["Ballad", "OST"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["Yoonmirae (윤미래)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Say",
           "url": "https://www.youtube.com/watch?v=uO_j23R18cM",
           "genre": ["Ballad", "OST"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["YUJIHI (유지희)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "Adult Delinquents (비행어른)",
@@ -380,11 +409,12 @@
           "url": "https://www.youtube.com/watch?v=_hCUeqR5p2s",
           "genre": ["Ballad", "Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     },
     {
       "artist": ["SILVERBELL (은종)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "",
       "tracks": [
         {
           "name": "디어마이프렌즈 (Dear my friends)",
@@ -401,8 +431,7 @@
           "url": "https://www.youtube.com/watch?v=Uovs5zm3QEE",
           "genre": ["Folk", "Pop"]
         }
-      ],
-      "tags": ["Korean", "Female Vocalist"]
+      ]
     }
   ]
 }

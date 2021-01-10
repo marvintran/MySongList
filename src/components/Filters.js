@@ -17,7 +17,9 @@ const Filters = () => {
         <FilterButton title="Rock" action={filters.updateGenre} active={filters.filterGenre.rock}/>{' '}
         <FilterButton title="Pop" action={filters.updateGenre} active={filters.filterGenre.pop}/>{' '}
         <FilterButton title="Acoustic" action={filters.updateGenre} active={filters.filterGenre.acoustic}/>{' '}
-        <FilterButton title="Jazz" action={filters.updateGenre} active={filters.filterGenre.jazz}/>
+        <FilterButton title="Jazz" action={filters.updateGenre} active={filters.filterGenre.jazz}/>{' '}
+        <FilterButton title="R&B" action={filters.updateGenre} active={filters.filterGenre.rnb}/>{' '}
+        <FilterButton title="Soul" action={filters.updateGenre} active={filters.filterGenre.soul}/>
       </div>
       <p>Tags:</p>
       <div>
@@ -27,7 +29,8 @@ const Filters = () => {
         <FilterButton title="Female Vocalist" action={filters.updateTag} active={filters.filterTag.femaleVocalist}/>{' '}
         <FilterButton title="Male Vocalist" action={filters.updateTag} active={filters.filterTag.maleVocalist}/>{' '}
         <FilterButton title="Girl Group" action={filters.updateTag} active={filters.filterTag.girlGroup}/>{' '}
-        <FilterButton title="OST" action={filters.updateTag} active={filters.filterTag.ost}/>
+        <FilterButton title="OST" action={filters.updateTag} active={filters.filterTag.ost}/>{' '}
+        <FilterButton title="Live" action={filters.updateTag} active={filters.filterTag.live}/>
       </div>
     </div>
   )

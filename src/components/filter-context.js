@@ -9,7 +9,9 @@ const genres = {
   rock: false,
   pop: false,
   acoustic: false,
-  jazz: false
+  jazz: false,
+  rnb: false,
+  soul: false
 }
 
 const tags = {
@@ -20,7 +22,8 @@ const tags = {
   maleVocalist: false,
   girlGroup: false,
   boyGroup: false,
-  ost: false
+  ost: false,
+  live: false
 }
 
 // This context provider is passed to any component requiring the context
@@ -38,6 +41,8 @@ export const FilterProvider = ({ children }) => {
   // https://daveceddia.com/usestate-hook-examples/
   function updateGenre(value) {
     let toCamelCase = value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+    if(value === "R&B")
+      toCamelCase = "rnb";
 
     setGenre({
       ...filterGenre,

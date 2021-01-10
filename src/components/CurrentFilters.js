@@ -7,12 +7,15 @@ import { FilterContext } from './filter-context';
 function camelCaseToNormal(value) {
   if(value === "ost")
     return "OST";
+  else if(value === "rnb")
+    return "R&B";
+
   let result = value.replace( /([A-Z])/g, " $1" );
   let finalResult = result.charAt(0).toUpperCase() + result.slice(1);
   return finalResult;
 }
 
-const CurrentFilters = ({ filterOptions, removeGenres, removeTags }) => {
+const CurrentFilters = () => {
   const filters = useContext(FilterContext);
 
   const genres = filters.selectedFilters()[0].map((genre) => {
