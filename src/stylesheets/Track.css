@@ -6,13 +6,22 @@ p {
 li {
     list-style-type: none;
 }
-.track-title {
+.track-title-ellipsis {
     width: 235px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.track-title:hover {
+
+.track-title-longer {
+    width: 635px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.track-title-ellipsis:hover {
     white-space: normal;
     overflow: visible;
 }
@@ -38,4 +47,5 @@ li {
 .react-player {
     position: absolute;
     top: 0;
+    left: 0;
 }

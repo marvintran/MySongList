@@ -29,7 +29,7 @@ function isActive(index, value, filters) {
   return isActive;
 }
 
-const Track = ({ track }) => {
+const Track = ({ track, videoCount, setVideoCount}) => {
   const filters = useContext(FilterContext);
   const [videoShowing, setVideoShowing] = useState(false);
 
@@ -72,14 +72,28 @@ const Track = ({ track }) => {
       );
   });
 
+  let css;
+  if(videoShowing) {
+    css = "track-title-longer"
+  } else {
+    css = "track-title-ellipsis"
+  }
+
   return (
     <React.Fragment>
       <li>
-        <div className="track-title">
+        <div className={css}>
           {track.name}
         </div>
         <div className="filter-options">
-          <span onClick={() => setVideoShowing(!videoShowing)}>
+          <span onClick={() => {
+            if(videoShowing) {
+              setVideoCount(videoCount - 1);
+            } else {
+              setVideoCount(videoCount + 1);
+            }
+            setVideoShowing(!videoShowing);
+          }}>
             {button}
           </span>
             {' '} | {' '} {genres}
