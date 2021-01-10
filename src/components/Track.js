@@ -5,6 +5,7 @@ import ReactPlayer from "react-player";
 import FilterButton from "./FilterButton";
 import "../stylesheets/Track.css";
 import { FilterContext } from './filter-context';
+import Badge from "react-bootstrap/Badge";
 
 // https://stackoverflow.com/a/7225450
 function camelCaseToNormal(value) {
@@ -45,31 +46,12 @@ const Track = ({ track, videoCount, setVideoCount}) => {
     button = <MdPlayCircleOutline size={23} className="cursor-pointer"/>
   }
 
-  const genres = track.genre.map((genre, index) => {
-    if(index < (track.genre.length-1))
-      return (
-        <React.Fragment>
-          <FilterButton
-            title={genre}
-            action={filters.updateGenre}
-            active={isActive(0, genre, filters.selectedFilters())}
-            size="sm"
-          />{' '}
-        </React.Fragment>
-      );
-
-    else
-      return (
-        <React.Fragment>
-          <FilterButton
-            title={genre}
-            action={filters.updateGenre}
-            active={isActive(0, genre, filters.selectedFilters())}
-            size="sm"
-            className="last-button"
-          />{' '}
-        </React.Fragment>
-      );
+  const genres = track.genre.map((genre) => {
+    return (
+      <React.Fragment>
+        {' '}<Badge variant="primary">{genre}</Badge>
+      </React.Fragment>
+    );
   });
 
   let css;
@@ -96,7 +78,7 @@ const Track = ({ track, videoCount, setVideoCount}) => {
           }}>
             {button}
           </span>
-            {' '} | {' '} {genres}
+            {' '} | {genres}
         </div>
         { videoShowing
           ? <div className='player-wrapper'>
