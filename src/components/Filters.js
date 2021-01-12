@@ -1,6 +1,7 @@
 //https://levelup.gitconnected.com/refactoring-a-complex-react-component-5-best-practices-to-write-efficient-and-readable-components-b0d06f4f22b4
 
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
+import "../stylesheets/Filters.css";
 import PropTypes from 'prop-types';
 import FilterButton from "./FilterButton";
 import { FilterContext } from './filter-context';
@@ -10,8 +11,8 @@ const Filters = () => {
 
   return (
     <div>
-      <p>Genres:</p>
-      <div>
+      <h4 className="filter-heading">Genres:</h4>
+      <div className="filter-buttons">
         <FilterButton title="Ballad" action={filters.updateGenre} active={filters.filterGenre.ballad}/>{' '}
         <FilterButton title="Indie" action={filters.updateGenre} active={filters.filterGenre.indie}/>{' '}
         <FilterButton title="Rock" action={filters.updateGenre} active={filters.filterGenre.rock}/>{' '}
@@ -21,8 +22,8 @@ const Filters = () => {
         <FilterButton title="R&B" action={filters.updateGenre} active={filters.filterGenre.rnb}/>{' '}
         <FilterButton title="Soul" action={filters.updateGenre} active={filters.filterGenre.soul}/>
       </div>
-      <p>Tags:</p>
-      <div>
+      <h4 className="filter-heading">Tags:</h4>
+      <div className="filter-buttons">
         <FilterButton title="Korean" action={filters.updateTag} active={filters.filterTag.korean}/>{' '}
         <FilterButton title="Japanese" action={filters.updateTag} active={filters.filterTag.japanese}/>{' '}
         <FilterButton title="English" action={filters.updateTag} active={filters.filterTag.english}/>{' '}

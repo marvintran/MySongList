@@ -63,6 +63,9 @@ export const FilterProvider = ({ children }) => {
 
   function removeGenre(value) {
     let toCamelCase = value.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+    if(value === "R&B")
+      toCamelCase = "rnb";
+
     setGenre({
       ...filterGenre,
       [toCamelCase]: false

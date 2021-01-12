@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
-import {AiOutlineMinusCircle} from "react-icons/ai";
-import {MdPlayCircleOutline} from "react-icons/md";
-import ReactPlayer from "react-player";
+import React, { useState } from 'react';
 import "../stylesheets/Track.css";
+import { AiOutlineMinusCircle } from "react-icons/ai";
+import { MdPlayCircleOutline } from "react-icons/md";
+import ReactPlayer from "react-player";
 import Badge from "react-bootstrap/Badge";
 
 const Track = ({ track, videoCount, setVideoCount}) => {

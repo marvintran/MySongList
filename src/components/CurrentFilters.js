@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import FilterButton from "./FilterButton";
 import "../stylesheets/CurrentFilters.css";
+import FilterButton from "./FilterButton";
 import { FilterContext } from './filter-context';
 
 // https://stackoverflow.com/a/7225450
@@ -11,8 +11,7 @@ function camelCaseToNormal(value) {
     return "R&B";
 
   let result = value.replace( /([A-Z])/g, " $1" );
-  let finalResult = result.charAt(0).toUpperCase() + result.slice(1);
-  return finalResult;
+  return result.charAt(0).toUpperCase() + result.slice(1);
 }
 
 const CurrentFilters = () => {

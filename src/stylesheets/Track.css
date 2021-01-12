@@ -1,10 +1,9 @@
-p {
-    margin: 0;
-    padding: 0;
-}
-
 li {
     list-style-type: none;
+}
+
+li:not(:last-child) {
+    margin-bottom: .3em;
 }
 
 .track-title-ellipsis {
@@ -28,11 +27,7 @@ li {
 }
 
 .badges {
-    margin-bottom: .3em;
-}
 
-.last-button {
-    margin-right: 3em;
 }
 
 .cursor-pointer {
@@ -48,5 +43,6 @@ li {
 .react-player {
     position: absolute;
     top: 0;
+    padding-top: .3em;
     left: 0;
 }

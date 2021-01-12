@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, { useContext, useState } from 'react';
 import "../stylesheets/Songs.css";
 import Track from "./Track"
 import { FilterContext } from './filter-context';
