@@ -12,6 +12,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Collapse from 'react-bootstrap/Collapse';
 
+import february2021 from './data/2021_02_february.json';
+
 import january2020 from './data/2020_01_january.json';
 import february2020 from './data/2020_02_february.json';
 import march2020 from './data/2020_03_march.json';
@@ -37,6 +39,7 @@ const App = () => {
           <Col className="nav-wrapper">
             <div className="nav-bar">
               <NavLink title={"2021"} currMarker={currMarker}/>
+              <NavLink title={"February 2021"} currMarker={currMarker} className={"month"}/>
               <NavLink title={"2020"} currMarker={currMarker}/>
               <NavLink title={"April 2020"} currMarker={currMarker} className={"month"}/>
               <NavLink title={"March 2020"} currMarker={currMarker} className={"month"}/>
@@ -69,6 +72,12 @@ const App = () => {
 
             <Collapse in={toggleYear2021}>
               <div>
+                <MonthList
+                  id={"february2021"}
+                  month={"February 2021"}
+                  songs={february2021.songs}
+                  action={setMarker}
+                />
               </div>
             </Collapse>
 

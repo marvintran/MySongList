@@ -1,0 +1,31 @@
+{
+  "songs": [
+    {
+      "artist": ["Kwon Jin Ah (권진아)"],
+      "tags": ["Korean", "Female Vocalist"],
+      "art": "https://image.bugsm.co.kr/album/images/150/40308/4030811.jpg",
+      "tracks": [
+        {
+          "name": "The Way For Us (우리의 방식)",
+          "url": "https://www.youtube.com/watch?v=wKqpBxAADc8",
+          "genre": ["Ballad", "Rock"]
+        },
+        {
+          "name": "You already have",
+          "url": "https://www.youtube.com/watch?v=gfDHB8ZY5R8",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Flower Heart (꽃말)",
+          "url": "https://www.youtube.com/watch?v=iVWDTZ0mqro",
+          "genre": ["Ballad"]
+        },
+        {
+          "name": "Good Bye (잘 가)",
+          "url": "https://www.youtube.com/watch?v=znR7ntGGihU",
+          "genre": ["Ballad"]
+        }
+      ]
+    }
+  ]
+}
