@@ -9,7 +9,7 @@ const SearchBar = () => {
     <React.Fragment>
       <Form>
         <Form.Group>
-          <Form.Label>Search</Form.Label>
+          <Form.Label><h4>Search</h4></Form.Label>
           <Form.Control type="text"
                         placeholder="Artist or Title"
                         value={filters.filterText}
